@@ -11,5 +11,6 @@ namespace Eci_Barber.Models
         public int Sat { get; set; }
         public int Ismail { get; set; }
         public int nanito { get; set; }
+        public int tunahanee { get; set; }
     }
 }
