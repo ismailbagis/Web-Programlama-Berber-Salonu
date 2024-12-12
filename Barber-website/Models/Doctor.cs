@@ -10,5 +10,6 @@ namespace Eci_Barber.Models
         public int MyProperty { get; set; }
         public int Sat { get; set; }
         public int Ismail { get; set; }
+        public int nanito { get; set; }
     }
 }

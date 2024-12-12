@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Eci-Barber")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3a219f3749fc78a409e92a567b74d553d39b28d2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d5bd4e1598e695ce8e3c884d7e177e7deafdf37f")]
 [assembly: System.Reflection.AssemblyProductAttribute("Eci-Barber")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Eci-Barber")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
