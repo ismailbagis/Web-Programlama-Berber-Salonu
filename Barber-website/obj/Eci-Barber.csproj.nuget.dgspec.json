@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rog\\Desktop\\Eci-Barber\\Eci-Barber.csproj": {}
+    "C:\\Users\\rog\\Documents\\GitHub\\Web-Programlama-Berber-Salonu\\Barber-website\\Eci-Barber.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rog\\Desktop\\Eci-Barber\\Eci-Barber.csproj": {
+    "C:\\Users\\rog\\Documents\\GitHub\\Web-Programlama-Berber-Salonu\\Barber-website\\Eci-Barber.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rog\\Desktop\\Eci-Barber\\Eci-Barber.csproj",
+        "projectUniqueName": "C:\\Users\\rog\\Documents\\GitHub\\Web-Programlama-Berber-Salonu\\Barber-website\\Eci-Barber.csproj",
         "projectName": "Eci-Barber",
-        "projectPath": "C:\\Users\\rog\\Desktop\\Eci-Barber\\Eci-Barber.csproj",
+        "projectPath": "C:\\Users\\rog\\Documents\\GitHub\\Web-Programlama-Berber-Salonu\\Barber-website\\Eci-Barber.csproj",
         "packagesPath": "C:\\Users\\rog\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rog\\Desktop\\Eci-Barber\\obj\\",
+        "outputPath": "C:\\Users\\rog\\Documents\\GitHub\\Web-Programlama-Berber-Salonu\\Barber-website\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\rog\\AppData\\Roaming\\NuGet\\NuGet.Config",

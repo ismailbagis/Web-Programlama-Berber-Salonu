@@ -1,17 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\rog\\source\\repos\\Eci-Barber\\",
+  "WorkspaceRootPath": "C:\\Users\\rog\\Documents\\GitHub\\Web-Programlama-Berber-Salonu\\Barber-website\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{38686A14-67FB-464A-B230-830918D32BDD}|Eci-Barber.csproj|c:\\users\\rog\\source\\repos\\eci-barber\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{38686A14-67FB-464A-B230-830918D32BDD}|Eci-Barber.csproj|c:\\users\\rog\\documents\\github\\web-programlama-berber-salonu\\barber-website\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38686A14-67FB-464A-B230-830918D32BDD}|Eci-Barber.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38686A14-67FB-464A-B230-830918D32BDD}|Eci-Barber.csproj|c:\\users\\rog\\documents\\github\\web-programlama-berber-salonu\\barber-website\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{38686A14-67FB-464A-B230-830918D32BDD}|Eci-Barber.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{38686A14-67FB-464A-B230-830918D32BDD}|Eci-Barber.csproj|c:\\users\\rog\\source\\repos\\eci-barber\\wwwroot\\css\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{38686A14-67FB-464A-B230-830918D32BDD}|Eci-Barber.csproj|c:\\users\\rog\\documents\\github\\web-programlama-berber-salonu\\barber-website\\wwwroot\\css\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{38686A14-67FB-464A-B230-830918D32BDD}|Eci-Barber.csproj|solutionrelative:wwwroot\\css\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{38686A14-67FB-464A-B230-830918D32BDD}|Eci-Barber.csproj|c:\\users\\rog\\source\\repos\\eci-barber\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{38686A14-67FB-464A-B230-830918D32BDD}|Eci-Barber.csproj|c:\\users\\rog\\documents\\github\\web-programlama-berber-salonu\\barber-website\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{38686A14-67FB-464A-B230-830918D32BDD}|Eci-Barber.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
@@ -22,15 +26,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\rog\\source\\repos\\Eci-Barber\\Views\\Home\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\rog\\Documents\\GitHub\\Web-Programlama-Berber-Salonu\\Barber-website\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\rog\\source\\repos\\Eci-Barber\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\rog\\Documents\\GitHub\\Web-Programlama-Berber-Salonu\\Barber-website\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "Views\\Home\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -40,29 +44,40 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "styles.css",
-              "DocumentMoniker": "C:\\Users\\rog\\source\\repos\\Eci-Barber\\wwwroot\\css\\styles.css",
-              "RelativeDocumentMoniker": "wwwroot\\css\\styles.css",
-              "ToolTip": "C:\\Users\\rog\\source\\repos\\Eci-Barber\\wwwroot\\css\\styles.css",
-              "RelativeToolTip": "wwwroot\\css\\styles.css",
-              "ViewState": "AgIAACQqAAAAAAAAAAAowDUqAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-12-03T13:32:01.02Z",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\rog\\Documents\\GitHub\\Web-Programlama-Berber-Salonu\\Barber-website\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\rog\\Documents\\GitHub\\Web-Programlama-Berber-Salonu\\Barber-website\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T14:31:58.673Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "styles.css",
+              "DocumentMoniker": "C:\\Users\\rog\\Documents\\GitHub\\Web-Programlama-Berber-Salonu\\Barber-website\\wwwroot\\css\\styles.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\styles.css",
+              "ToolTip": "C:\\Users\\rog\\Documents\\GitHub\\Web-Programlama-Berber-Salonu\\Barber-website\\wwwroot\\css\\styles.css",
+              "RelativeToolTip": "wwwroot\\css\\styles.css",
+              "ViewState": "AgIAACQqAAAAAAAAAAAowDUqAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-12-03T13:32:01.02Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\rog\\source\\repos\\Eci-Barber\\Views\\Shared\\_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\rog\\Documents\\GitHub\\Web-Programlama-Berber-Salonu\\Barber-website\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\rog\\source\\repos\\Eci-Barber\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\rog\\Documents\\GitHub\\Web-Programlama-Berber-Salonu\\Barber-website\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAC4AAAAAAAAAAAAmwE0AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-03T13:19:41.709Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-03T13:19:41.709Z"
             }
           ]
         }
