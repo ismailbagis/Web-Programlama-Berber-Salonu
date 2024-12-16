@@ -1,46 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\rog\\Documents\\GitHub\\Web-Programlama-Berber-Salonu\\Barber-website\\",
+  "WorkspaceRootPath": "C:\\Users\\Tunahan \u00D6zdemir\\Documents\\GitHub\\Web-Programlama-Berber-Salonu\\Barber-website\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{38686A14-67FB-464A-B230-830918D32BDD}|Eci-Barber.csproj|c:\\users\\rog\\documents\\github\\web-programlama-berber-salonu\\barber-website\\models\\calisan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38686A14-67FB-464A-B230-830918D32BDD}|Eci-Barber.csproj|solutionrelative:models\\calisan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{38686A14-67FB-464A-B230-830918D32BDD}|Eci-Barber.csproj|c:\\users\\rog\\documents\\github\\web-programlama-berber-salonu\\barber-website\\models\\kullanici.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38686A14-67FB-464A-B230-830918D32BDD}|Eci-Barber.csproj|solutionrelative:models\\kullanici.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{38686A14-67FB-464A-B230-830918D32BDD}|Eci-Barber.csproj|c:\\users\\rog\\documents\\github\\web-programlama-berber-salonu\\barber-website\\models\\randevu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38686A14-67FB-464A-B230-830918D32BDD}|Eci-Barber.csproj|solutionrelative:models\\randevu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{38686A14-67FB-464A-B230-830918D32BDD}|Eci-Barber.csproj|c:\\users\\rog\\documents\\github\\web-programlama-berber-salonu\\barber-website\\models\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38686A14-67FB-464A-B230-830918D32BDD}|Eci-Barber.csproj|solutionrelative:models\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{38686A14-67FB-464A-B230-830918D32BDD}|Eci-Barber.csproj|c:\\users\\rog\\documents\\github\\web-programlama-berber-salonu\\barber-website\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38686A14-67FB-464A-B230-830918D32BDD}|Eci-Barber.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{38686A14-67FB-464A-B230-830918D32BDD}|Eci-Barber.csproj|c:\\users\\rog\\documents\\github\\web-programlama-berber-salonu\\barber-website\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{38686A14-67FB-464A-B230-830918D32BDD}|Eci-Barber.csproj|c:\\users\\tunahan \u00F6zdemir\\documents\\github\\web-programlama-berber-salonu\\barber-website\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{38686A14-67FB-464A-B230-830918D32BDD}|Eci-Barber.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{38686A14-67FB-464A-B230-830918D32BDD}|Eci-Barber.csproj|c:\\users\\rog\\documents\\github\\web-programlama-berber-salonu\\barber-website\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{38686A14-67FB-464A-B230-830918D32BDD}|Eci-Barber.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{38686A14-67FB-464A-B230-830918D32BDD}|Eci-Barber.csproj|c:\\users\\rog\\documents\\github\\web-programlama-berber-salonu\\barber-website\\models\\hizmet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38686A14-67FB-464A-B230-830918D32BDD}|Eci-Barber.csproj|solutionrelative:models\\hizmet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{38686A14-67FB-464A-B230-830918D32BDD}|Eci-Barber.csproj|c:\\users\\rog\\documents\\github\\web-programlama-berber-salonu\\barber-website\\models\\salon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38686A14-67FB-464A-B230-830918D32BDD}|Eci-Barber.csproj|solutionrelative:models\\salon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{38686A14-67FB-464A-B230-830918D32BDD}|Eci-Barber.csproj|c:\\users\\rog\\documents\\github\\web-programlama-berber-salonu\\barber-website\\wwwroot\\css\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{38686A14-67FB-464A-B230-830918D32BDD}|Eci-Barber.csproj|solutionrelative:wwwroot\\css\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{38686A14-67FB-464A-B230-830918D32BDD}|Eci-Barber.csproj|c:\\users\\tunahan \u00F6zdemir\\documents\\github\\web-programlama-berber-salonu\\barber-website\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38686A14-67FB-464A-B230-830918D32BDD}|Eci-Barber.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,138 +18,36 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\rog\\Documents\\GitHub\\Web-Programlama-Berber-Salonu\\Barber-website\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\rog\\Documents\\GitHub\\Web-Programlama-Berber-Salonu\\Barber-website\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-03T13:05:46.457Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\rog\\Documents\\GitHub\\Web-Programlama-Berber-Salonu\\Barber-website\\appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Tunahan \u00D6zdemir\\Documents\\GitHub\\Web-Programlama-Berber-Salonu\\Barber-website\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\rog\\Documents\\GitHub\\Web-Programlama-Berber-Salonu\\Barber-website\\appsettings.json",
+              "ToolTip": "C:\\Users\\Tunahan \u00D6zdemir\\Documents\\GitHub\\Web-Programlama-Berber-Salonu\\Barber-website\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-12-16T18:20:27.88Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\rog\\Documents\\GitHub\\Web-Programlama-Berber-Salonu\\Barber-website\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\rog\\Documents\\GitHub\\Web-Programlama-Berber-Salonu\\Barber-website\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T14:31:58.673Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DataContext.cs",
-              "DocumentMoniker": "C:\\Users\\rog\\Documents\\GitHub\\Web-Programlama-Berber-Salonu\\Barber-website\\Models\\DataContext.cs",
-              "RelativeDocumentMoniker": "Models\\DataContext.cs",
-              "ToolTip": "C:\\Users\\rog\\Documents\\GitHub\\Web-Programlama-Berber-Salonu\\Barber-website\\Models\\DataContext.cs",
-              "RelativeToolTip": "Models\\DataContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T17:54:29.746Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Randevu.cs",
-              "DocumentMoniker": "C:\\Users\\rog\\Documents\\GitHub\\Web-Programlama-Berber-Salonu\\Barber-website\\Models\\Randevu.cs",
-              "RelativeDocumentMoniker": "Models\\Randevu.cs",
-              "ToolTip": "C:\\Users\\rog\\Documents\\GitHub\\Web-Programlama-Berber-Salonu\\Barber-website\\Models\\Randevu.cs",
-              "RelativeToolTip": "Models\\Randevu.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T18:10:18.549Z",
+              "WhenOpened": "2024-12-16T18:55:29.029Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Kullanici.cs",
-              "DocumentMoniker": "C:\\Users\\rog\\Documents\\GitHub\\Web-Programlama-Berber-Salonu\\Barber-website\\Models\\Kullanici.cs",
-              "RelativeDocumentMoniker": "Models\\Kullanici.cs",
-              "ToolTip": "C:\\Users\\rog\\Documents\\GitHub\\Web-Programlama-Berber-Salonu\\Barber-website\\Models\\Kullanici.cs",
-              "RelativeToolTip": "Models\\Kullanici.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Tunahan \u00D6zdemir\\Documents\\GitHub\\Web-Programlama-Berber-Salonu\\Barber-website\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Tunahan \u00D6zdemir\\Documents\\GitHub\\Web-Programlama-Berber-Salonu\\Barber-website\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T18:10:54.585Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Calisan.cs",
-              "DocumentMoniker": "C:\\Users\\rog\\Documents\\GitHub\\Web-Programlama-Berber-Salonu\\Barber-website\\Models\\Calisan.cs",
-              "RelativeDocumentMoniker": "Models\\Calisan.cs",
-              "ToolTip": "C:\\Users\\rog\\Documents\\GitHub\\Web-Programlama-Berber-Salonu\\Barber-website\\Models\\Calisan.cs",
-              "RelativeToolTip": "Models\\Calisan.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T18:09:52.126Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Hizmet.cs",
-              "DocumentMoniker": "C:\\Users\\rog\\Documents\\GitHub\\Web-Programlama-Berber-Salonu\\Barber-website\\Models\\Hizmet.cs",
-              "RelativeDocumentMoniker": "Models\\Hizmet.cs",
-              "ToolTip": "C:\\Users\\rog\\Documents\\GitHub\\Web-Programlama-Berber-Salonu\\Barber-website\\Models\\Hizmet.cs",
-              "RelativeToolTip": "Models\\Hizmet.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T18:10:03.907Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Salon.cs",
-              "DocumentMoniker": "C:\\Users\\rog\\Documents\\GitHub\\Web-Programlama-Berber-Salonu\\Barber-website\\Models\\Salon.cs",
-              "RelativeDocumentMoniker": "Models\\Salon.cs",
-              "ToolTip": "C:\\Users\\rog\\Documents\\GitHub\\Web-Programlama-Berber-Salonu\\Barber-website\\Models\\Salon.cs",
-              "RelativeToolTip": "Models\\Salon.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T18:08:14.472Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "styles.css",
-              "DocumentMoniker": "C:\\Users\\rog\\Documents\\GitHub\\Web-Programlama-Berber-Salonu\\Barber-website\\wwwroot\\css\\styles.css",
-              "RelativeDocumentMoniker": "wwwroot\\css\\styles.css",
-              "ToolTip": "C:\\Users\\rog\\Documents\\GitHub\\Web-Programlama-Berber-Salonu\\Barber-website\\wwwroot\\css\\styles.css",
-              "RelativeToolTip": "wwwroot\\css\\styles.css",
-              "ViewState": "AgIAACQqAAAAAAAAAAAowDUqAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-12-03T13:32:01.02Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-16T18:55:18.759Z"
             }
           ]
         }

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rog\\Documents\\GitHub\\Web-Programlama-Berber-Salonu\\Barber-website\\Eci-Barber.csproj": {}
+    "C:\\Users\\Tunahan Özdemir\\Documents\\GitHub\\Web-Programlama-Berber-Salonu\\Barber-website\\Eci-Barber.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rog\\Documents\\GitHub\\Web-Programlama-Berber-Salonu\\Barber-website\\Eci-Barber.csproj": {
+    "C:\\Users\\Tunahan Özdemir\\Documents\\GitHub\\Web-Programlama-Berber-Salonu\\Barber-website\\Eci-Barber.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rog\\Documents\\GitHub\\Web-Programlama-Berber-Salonu\\Barber-website\\Eci-Barber.csproj",
+        "projectUniqueName": "C:\\Users\\Tunahan Özdemir\\Documents\\GitHub\\Web-Programlama-Berber-Salonu\\Barber-website\\Eci-Barber.csproj",
         "projectName": "Eci-Barber",
-        "projectPath": "C:\\Users\\rog\\Documents\\GitHub\\Web-Programlama-Berber-Salonu\\Barber-website\\Eci-Barber.csproj",
-        "packagesPath": "C:\\Users\\rog\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rog\\Documents\\GitHub\\Web-Programlama-Berber-Salonu\\Barber-website\\obj\\",
+        "projectPath": "C:\\Users\\Tunahan Özdemir\\Documents\\GitHub\\Web-Programlama-Berber-Salonu\\Barber-website\\Eci-Barber.csproj",
+        "packagesPath": "C:\\Users\\Tunahan Özdemir\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Tunahan Özdemir\\Documents\\GitHub\\Web-Programlama-Berber-Salonu\\Barber-website\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\rog\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Tunahan Özdemir\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

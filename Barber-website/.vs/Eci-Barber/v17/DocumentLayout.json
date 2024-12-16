@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\rog\\Documents\\GitHub\\Web-Programlama-Berber-Salonu\\Barber-website\\",
+  "WorkspaceRootPath": "C:\\Users\\Tunahan \u00D6zdemir\\Documents\\GitHub\\Web-Programlama-Berber-Salonu\\Barber-website\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{38686A14-67FB-464A-B230-830918D32BDD}|Eci-Barber.csproj|c:\\users\\rog\\documents\\github\\web-programlama-berber-salonu\\barber-website\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{38686A14-67FB-464A-B230-830918D32BDD}|Eci-Barber.csproj|c:\\users\\tunahan \u00F6zdemir\\documents\\github\\web-programlama-berber-salonu\\barber-website\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{38686A14-67FB-464A-B230-830918D32BDD}|Eci-Barber.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{38686A14-67FB-464A-B230-830918D32BDD}|Eci-Barber.csproj|c:\\users\\rog\\documents\\github\\web-programlama-berber-salonu\\barber-website\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{38686A14-67FB-464A-B230-830918D32BDD}|Eci-Barber.csproj|c:\\users\\tunahan \u00F6zdemir\\documents\\github\\web-programlama-berber-salonu\\barber-website\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{38686A14-67FB-464A-B230-830918D32BDD}|Eci-Barber.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -18,17 +18,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\rog\\Documents\\GitHub\\Web-Programlama-Berber-Salonu\\Barber-website\\appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Tunahan \u00D6zdemir\\Documents\\GitHub\\Web-Programlama-Berber-Salonu\\Barber-website\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\rog\\Documents\\GitHub\\Web-Programlama-Berber-Salonu\\Barber-website\\appsettings.json",
+              "ToolTip": "C:\\Users\\Tunahan \u00D6zdemir\\Documents\\GitHub\\Web-Programlama-Berber-Salonu\\Barber-website\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-12-16T18:55:29.029Z",
               "EditorCaption": ""
@@ -37,14 +41,13 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\rog\\Documents\\GitHub\\Web-Programlama-Berber-Salonu\\Barber-website\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\Tunahan \u00D6zdemir\\Documents\\GitHub\\Web-Programlama-Berber-Salonu\\Barber-website\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\rog\\Documents\\GitHub\\Web-Programlama-Berber-Salonu\\Barber-website\\Program.cs",
+              "ToolTip": "C:\\Users\\Tunahan \u00D6zdemir\\Documents\\GitHub\\Web-Programlama-Berber-Salonu\\Barber-website\\Program.cs",
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T18:55:18.759Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-16T18:55:18.759Z"
             }
           ]
         }
