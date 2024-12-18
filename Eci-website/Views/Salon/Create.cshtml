@@ -1,0 +1,27 @@
+﻿@model Salon
+
+<h2>Salon Ekle</h2>
+<hr>
+<form asp-controller="Salon" asp-action="Create" method="post">
+    <div class="mb-3">
+        <label asp-for="Ad" class="form-label">Salon Adı :</label>
+        <input asp-for="Ad" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label asp-for="Adres" class="form-label">Adres :</label>
+        <input asp-for="Adres" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label asp-for="TelefonNumarasi" class="form-label">Telefon Numarası :</label>
+        <input asp-for="TelefonNumarasi" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label asp-for="CalismaSaatleri" class="form-label">Çalışma Saatleri :</label>
+        <input asp-for="CalismaSaatleri" class="form-control">
+    </div>
+
+    <button type="submit" class="btn btn-success">Kaydet</button>
+</form>
+<br
+<br />
+<br />
