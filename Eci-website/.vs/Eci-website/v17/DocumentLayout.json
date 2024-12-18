@@ -1,0 +1,155 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\rog\\source\\repos\\Eci-website\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{911E44E3-CA21-4CA0-A8D7-B0262537A17C}|Eci-website.csproj|c:\\users\\rog\\source\\repos\\eci-website\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{911E44E3-CA21-4CA0-A8D7-B0262537A17C}|Eci-website.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{911E44E3-CA21-4CA0-A8D7-B0262537A17C}|Eci-website.csproj|c:\\users\\rog\\source\\repos\\eci-website\\views\\calisan\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{911E44E3-CA21-4CA0-A8D7-B0262537A17C}|Eci-website.csproj|solutionrelative:views\\calisan\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{911E44E3-CA21-4CA0-A8D7-B0262537A17C}|Eci-website.csproj|c:\\users\\rog\\source\\repos\\eci-website\\controllers\\calisancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{911E44E3-CA21-4CA0-A8D7-B0262537A17C}|Eci-website.csproj|solutionrelative:controllers\\calisancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{911E44E3-CA21-4CA0-A8D7-B0262537A17C}|Eci-website.csproj|c:\\users\\rog\\source\\repos\\eci-website\\views\\calisan\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{911E44E3-CA21-4CA0-A8D7-B0262537A17C}|Eci-website.csproj|solutionrelative:views\\calisan\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{911E44E3-CA21-4CA0-A8D7-B0262537A17C}|Eci-website.csproj|c:\\users\\rog\\source\\repos\\eci-website\\views\\calisan\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{911E44E3-CA21-4CA0-A8D7-B0262537A17C}|Eci-website.csproj|solutionrelative:views\\calisan\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{911E44E3-CA21-4CA0-A8D7-B0262537A17C}|Eci-website.csproj|c:\\users\\rog\\source\\repos\\eci-website\\models\\calisan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{911E44E3-CA21-4CA0-A8D7-B0262537A17C}|Eci-website.csproj|solutionrelative:models\\calisan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{911E44E3-CA21-4CA0-A8D7-B0262537A17C}|Eci-website.csproj|c:\\users\\rog\\source\\repos\\eci-website\\models\\salon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{911E44E3-CA21-4CA0-A8D7-B0262537A17C}|Eci-website.csproj|solutionrelative:models\\salon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{911E44E3-CA21-4CA0-A8D7-B0262537A17C}|Eci-website.csproj|c:\\users\\rog\\source\\repos\\eci-website\\views\\hizmet\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{911E44E3-CA21-4CA0-A8D7-B0262537A17C}|Eci-website.csproj|solutionrelative:views\\hizmet\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\rog\\source\\repos\\Eci-website\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\rog\\source\\repos\\Eci-website\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAuwGEAAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-18T14:24:04.254Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\rog\\source\\repos\\Eci-website\\Views\\Calisan\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Calisan\\Index.cshtml",
+              "ToolTip": "C:\\Users\\rog\\source\\repos\\Eci-website\\Views\\Calisan\\Index.cshtml",
+              "RelativeToolTip": "Views\\Calisan\\Index.cshtml",
+              "ViewState": "AgIAABAAAAAAAAAAAAAcwCsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-18T14:17:41.992Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Calisan.cs",
+              "DocumentMoniker": "C:\\Users\\rog\\source\\repos\\Eci-website\\Models\\Calisan.cs",
+              "RelativeDocumentMoniker": "Models\\Calisan.cs",
+              "ToolTip": "C:\\Users\\rog\\source\\repos\\Eci-website\\Models\\Calisan.cs",
+              "RelativeToolTip": "Models\\Calisan.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T13:34:51.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Salon.cs",
+              "DocumentMoniker": "C:\\Users\\rog\\source\\repos\\Eci-website\\Models\\Salon.cs",
+              "RelativeDocumentMoniker": "Models\\Salon.cs",
+              "ToolTip": "C:\\Users\\rog\\source\\repos\\Eci-website\\Models\\Salon.cs",
+              "RelativeToolTip": "Models\\Salon.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T13:34:43.521Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\rog\\source\\repos\\Eci-website\\Views\\Calisan\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Calisan\\Create.cshtml",
+              "ToolTip": "C:\\Users\\rog\\source\\repos\\Eci-website\\Views\\Calisan\\Create.cshtml",
+              "RelativeToolTip": "Views\\Calisan\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-18T13:33:02.864Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\rog\\source\\repos\\Eci-website\\Views\\Hizmet\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Hizmet\\Create.cshtml",
+              "ToolTip": "C:\\Users\\rog\\source\\repos\\Eci-website\\Views\\Hizmet\\Create.cshtml",
+              "RelativeToolTip": "Views\\Hizmet\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-18T13:33:01.624Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CalisanController.cs",
+              "DocumentMoniker": "C:\\Users\\rog\\source\\repos\\Eci-website\\Controllers\\CalisanController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CalisanController.cs",
+              "ToolTip": "C:\\Users\\rog\\source\\repos\\Eci-website\\Controllers\\CalisanController.cs",
+              "RelativeToolTip": "Controllers\\CalisanController.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAcwG4AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T13:30:39.566Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\rog\\source\\repos\\Eci-website\\Views\\Calisan\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Calisan\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\rog\\source\\repos\\Eci-website\\Views\\Calisan\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Calisan\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-18T13:30:21.764Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+﻿@model IEnumerable<Hizmet>
+
+<h2>Hizmetler</h2>
+<hr>
+
+<a href="/Hizmet/Create" class="btn btn-primary mb-3">Hizmet Ekle</a>
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card bg-secondary text-white shadow border-secondary">
+                <div class="card-body">
+                    <h5 class="card-title">@Html.DisplayFor(modelItem => item.Ad)</h5>
+                    <p class="card-text">
+                        <strong>Adres:</strong> @Html.DisplayFor(modelItem => item.Aciklama) <br />
+                        <strong>Telefon:</strong> @Html.DisplayFor(modelItem => item.Ucret) <br />
+                        <strong>Çalışma Saatleri:</strong> @Html.DisplayFor(modelItem => item.Sure)
+                        <strong>Çalışma Saatleri:</strong> @Html.DisplayFor(modelItem => item.SalonId)
+
+                    </p>
+                    <div class="d-flex justify-content-between">
+                        <a asp-controller="Hizmet" asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-primary">Detaylar</a>
+                        <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger">Sil</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+
