@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rog\\source\\repos\\Eci-website\\Eci-website.csproj": {}
+    "C:\\Users\\rog\\Desktop\\site yedek 3\\Eci-website\\Eci-website.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rog\\source\\repos\\Eci-website\\Eci-website.csproj": {
+    "C:\\Users\\rog\\Desktop\\site yedek 3\\Eci-website\\Eci-website.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rog\\source\\repos\\Eci-website\\Eci-website.csproj",
+        "projectUniqueName": "C:\\Users\\rog\\Desktop\\site yedek 3\\Eci-website\\Eci-website.csproj",
         "projectName": "Eci-website",
-        "projectPath": "C:\\Users\\rog\\source\\repos\\Eci-website\\Eci-website.csproj",
+        "projectPath": "C:\\Users\\rog\\Desktop\\site yedek 3\\Eci-website\\Eci-website.csproj",
         "packagesPath": "C:\\Users\\rog\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rog\\source\\repos\\Eci-website\\obj\\",
+        "outputPath": "C:\\Users\\rog\\Desktop\\site yedek 3\\Eci-website\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\rog\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -46,7 +46,17 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.11, )"
+            },
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[9.0.0, )"
             },

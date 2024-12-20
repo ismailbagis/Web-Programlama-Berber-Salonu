@@ -1,0 +1,31 @@
+﻿@model EditViewModel
+
+
+<br />
+<br />
+<br />
+<br />
+<h2>Kullanıcı Bilgilerini Düzenle</h2>
+
+<form asp-action="Edit" method="post">
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <input name="Id" type="hidden" value="@Model.Id" />
+    <div class="mb-3">
+        <label asp-for="FullName"> Kullanıcı Adı</label>
+        <input asp-for="FullName" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label asp-for="Email">E-mail</label>
+        <input asp-for="Email" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Password">Şifre</label>
+        <input asp-for="Password" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label asp-for="ConfirmPassword">Şifre Tekrar</label>
+        <input asp-for="ConfirmPassword" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Kaydet</button>
+</form>

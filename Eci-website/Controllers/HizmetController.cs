@@ -8,9 +8,9 @@ namespace Eci_website.Controllers
 {
     public class HizmetController: Controller
     {
-        private readonly DataContext _context;
+        private readonly IdentityContext _context;
 
-        public HizmetController(DataContext context)
+        public HizmetController(IdentityContext context)
         {
             _context = context;
         }

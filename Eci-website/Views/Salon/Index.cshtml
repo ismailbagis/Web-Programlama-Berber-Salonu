@@ -13,6 +13,8 @@
                 <div class="card-body">
                     <h5 class="card-title">@Html.DisplayFor(modelItem => item.Ad)</h5>
                     <p class="card-text">
+                        <strong>Resim:</strong><br />
+                        <img src="@item.Image" alt="@item.Ad" class="img-fluid mb-2" /> <br />
                         <strong>Adres:</strong> @Html.DisplayFor(modelItem => item.Adres) <br />
                         <strong>Telefon:</strong> @Html.DisplayFor(modelItem => item.TelefonNumarasi) <br />
                         <strong>Çalışma Saatleri:</strong> @Html.DisplayFor(modelItem => item.CalismaSaatleri)
@@ -28,3 +30,14 @@
 </div>
 
 
+@section Scripts {
+    <script>
+        function confirmDelete(id) {
+            var confirmation = confirm("Bu çalışanı silmek istediğinizden emin misiniz?");
+            if (confirmation) {
+                window.location.href = '/Salon/Delete/' + id; // Redirect to the delete action
+            }
+            return false; // Prevent default link action
+        }
+    </script>
+}

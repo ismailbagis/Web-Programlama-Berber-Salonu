@@ -9,16 +9,16 @@ namespace Eci_website.Controllers
     public class CalisanController : Controller
     {
 
-        private readonly DataContext _context;
+        private readonly IdentityContext _context;
 
-        public CalisanController(DataContext context)
+        public CalisanController(IdentityContext context)
         {
             _context = context;
         }
 
         public async Task<IActionResult> Index()
         {
-            var calisanlar = await _context.Calisanlar.ToListAsync();
+            var calisanlar = await _context.Calisanlar.Include(x => x.Salon).ToListAsync();
 
             return View(calisanlar);
         }

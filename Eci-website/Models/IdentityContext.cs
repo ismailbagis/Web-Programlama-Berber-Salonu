@@ -1,10 +1,13 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Eci_website.ViewModel;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 
 namespace Eci_website.Models
 {
-    public class DataContext : DbContext
+    public class IdentityContext : IdentityDbContext<Kullanici,Rol,string>
     {
-        public DataContext(DbContextOptions<DataContext> options) : base(options)
+        public IdentityContext(DbContextOptions<IdentityContext> options) : base(options)
         {
 
         }
@@ -13,14 +16,17 @@ namespace Eci_website.Models
         public DbSet<Calisan> Calisanlar { get; set; }
         public DbSet<Hizmet> Hizmetler { get; set; }
         public DbSet<Randevu> Randevular { get; set; }
-        public DbSet<Kullanici> Kullanicilar { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<IdentityUserLogin<string>>()
+                .HasKey(u => new { u.LoginProvider, u.ProviderKey }); // Birincil anahtar olarak LoginProvider ve ProviderKey'i tanımladık
             modelBuilder.Entity<Hizmet>()
-                .Property(h => h.Ucret)
-                .HasPrecision(18, 2);
+                    .Property(h => h.Ucret)
+                    .HasPrecision(18, 2);
 
             modelBuilder.Entity<Randevu>()
        .HasOne(r => r.Hizmet)

@@ -1,0 +1,83 @@
+﻿/* admin.css */
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Sidebar styles */
+#sidebar-wrapper {
+    width: 250px;
+    transition: all 0.3s;
+}
+
+    #sidebar-wrapper.toggled {
+        margin-left: -250px;
+    }
+
+.sidebar-heading {
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 1rem;
+    background-color: #343a40;
+}
+
+.list-group-item {
+    border: none;
+    padding: 0.75rem 1.5rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+    .list-group-item:hover {
+        background-color: #495057;
+        color: #fff;
+    }
+
+/* Page content styles */
+#page-content-wrapper {
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container-fluid {
+    padding: 2rem;
+}
+
+/* Toggle button styles */
+#menu-toggle {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+    #menu-toggle:hover {
+        background-color: #0056b3;
+    }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #sidebar-wrapper {
+        margin-left: -250px;
+    }
+
+        #sidebar-wrapper.toggled {
+            margin-left: 0;
+        }
+}
