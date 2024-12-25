@@ -1,0 +1,32 @@
+﻿@model Eci_website.Models.Randevu
+
+@{
+    ViewData["Title"] = "Randevu Oluştur";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<form method="post" action="@Url.Action("RandevuOlustur")">
+    <input type="hidden" name="calisanId" value="@Model.CalisanId" />
+    <input type="hidden" name="hizmetId" value="@Model.HizmetId" />
+    <div>
+        <label for="RandevuSaati">Randevu Saati:</label>
+        <input type="datetime-local" id="RandevuSaati" name="randevuSaati" class="form-control" required />
+    </div>
+    <div>
+        <label for="MusteriAdi">Müşteri Adı:</label>
+        <input type="text" id="MusteriAdi" name="musteriAdi" class="form-control" required />
+    </div>
+    <div>
+        <label for="MusteriTelefon">Müşteri Telefonu:</label>
+        <input type="text" id="MusteriTelefon" name="musteriTelefon" class="form-control" required />
+    </div>
+
+    <button type="submit" class="btn btn-success">Randevu Oluştur</button>
+</form>
+
+@section Scripts {
+    <script>
+        // JavaScript for handling form submissions or further interactions
+    </script>
+}

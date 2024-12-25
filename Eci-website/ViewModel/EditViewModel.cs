@@ -17,5 +17,7 @@ namespace Eci_website.ViewModel
         [DataType(DataType.Password)]
         [Compare("Password", ErrorMessage = "Parolalar Eşleşmiyor.")]
         public string? ConfirmPassword { get; set; }
+
+        public IList<string>? SelectedRoles { get; set; }
     }
 }

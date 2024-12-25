@@ -26,6 +26,18 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = c:\Users\Tunahan Özdemir\Documents\GitHub\Web-Programlama-Berber-Salonu\Eci-website
 build_property._RazorSourceGeneratorDebug = 
 
+[c:/Users/Tunahan Özdemir/Documents/GitHub/Web-Programlama-Berber-Salonu/Eci-website/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Tunahan Özdemir/Documents/GitHub/Web-Programlama-Berber-Salonu/Eci-website/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Tunahan Özdemir/Documents/GitHub/Web-Programlama-Berber-Salonu/Eci-website/Views/Admin/Randevular.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUmFuZGV2dWxhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [c:/Users/Tunahan Özdemir/Documents/GitHub/Web-Programlama-Berber-Salonu/Eci-website/Views/Calisan/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FsaXNhblxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -50,36 +62,32 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Tunahan Özdemir/Documents/GitHub/Web-Programlama-Berber-Salonu/Eci-website/Views/Kullanici/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS3VsbGFuaWNpXENyZWF0ZS5jc2h0bWw=
+[c:/Users/Tunahan Özdemir/Documents/GitHub/Web-Programlama-Berber-Salonu/Eci-website/Views/Randevu/RandevuAl.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmFuZGV2dVxSYW5kZXZ1QWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Tunahan Özdemir/Documents/GitHub/Web-Programlama-Berber-Salonu/Eci-website/Views/Kullanici/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS3VsbGFuaWNpXEVkaXQuY3NodG1s
+[c:/Users/Tunahan Özdemir/Documents/GitHub/Web-Programlama-Berber-Salonu/Eci-website/Views/Randevu/RandevuListesi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmFuZGV2dVxSYW5kZXZ1TGlzdGVzaS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Tunahan Özdemir/Documents/GitHub/Web-Programlama-Berber-Salonu/Eci-website/Views/Kullanici/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS3VsbGFuaWNpXEluZGV4LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[c:/Users/Tunahan Özdemir/Documents/GitHub/Web-Programlama-Berber-Salonu/Eci-website/Views/Randevu/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmFuZGV2dVxDcmVhdGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[c:/Users/Tunahan Özdemir/Documents/GitHub/Web-Programlama-Berber-Salonu/Eci-website/Views/Randevu/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmFuZGV2dVxFZGl0LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[c:/Users/Tunahan Özdemir/Documents/GitHub/Web-Programlama-Berber-Salonu/Eci-website/Views/Randevu/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmFuZGV2dVxJbmRleC5jc2h0bWw=
+[c:/Users/Tunahan Özdemir/Documents/GitHub/Web-Programlama-Berber-Salonu/Eci-website/Views/Randevu/RandevuOlustur.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmFuZGV2dVxSYW5kZXZ1T2x1c3R1ci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [c:/Users/Tunahan Özdemir/Documents/GitHub/Web-Programlama-Berber-Salonu/Eci-website/Views/Roles/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[c:/Users/Tunahan Özdemir/Documents/GitHub/Web-Programlama-Berber-Salonu/Eci-website/Views/Roles/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [c:/Users/Tunahan Özdemir/Documents/GitHub/Web-Programlama-Berber-Salonu/Eci-website/Views/Roles/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Tunahan Özdemir/Documents/GitHub/Web-Programlama-Berber-Salonu/Eci-website/Views/Roles/UserInRole.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcVXNlckluUm9sZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [c:/Users/Tunahan Özdemir/Documents/GitHub/Web-Programlama-Berber-Salonu/Eci-website/Views/Salon/Create.cshtml]
@@ -96,6 +104,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [c:/Users/Tunahan Özdemir/Documents/GitHub/Web-Programlama-Berber-Salonu/Eci-website/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Tunahan Özdemir/Documents/GitHub/Web-Programlama-Berber-Salonu/Eci-website/Views/Shared/_LoginLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpbkxheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [c:/Users/Tunahan Özdemir/Documents/GitHub/Web-Programlama-Berber-Salonu/Eci-website/Views/Shared/_ValidationScriptsPartial.cshtml]

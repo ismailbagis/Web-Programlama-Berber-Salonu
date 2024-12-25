@@ -1,9 +1,16 @@
 ﻿@model IEnumerable<Hizmet>
 
+@{
+    var isAdmin = User.IsInRole("admin"); // Check if the user is in the Admin role
+}
+
 <h2>Hizmetler</h2>
 <hr>
 
-<a href="/Hizmet/Create" class="btn btn-primary mb-3">Hizmet Ekle</a>
+@if (isAdmin)
+{
+    <a href="/Hizmet/Create" class="btn btn-primary mb-3">Hizmet Ekle</a>
+}
 
 <div class="row">
     @foreach (var item in Model)
@@ -19,10 +26,13 @@
                         <strong>Çalışma Saatleri:</strong> @Html.DisplayFor(modelItem => item.SalonId)
 
                     </p>
-                    <div class="d-flex justify-content-between">
-                        <a asp-controller="Hizmet" asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-primary">Detaylar</a>
-                        <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger">Sil</a>
-                    </div>
+                    @if (isAdmin)
+                    {
+                        <div class="d-flex justify-content-between">
+                            <a asp-controller="Hizmet" asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-primary">Detaylar</a>
+                            <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger">Sil</a>
+                        </div>
+                    }
                 </div>
             </div>
         </div>

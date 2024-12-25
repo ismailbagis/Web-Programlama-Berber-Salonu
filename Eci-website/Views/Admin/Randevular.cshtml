@@ -1,0 +1,37 @@
+﻿@model IEnumerable<Eci_website.Models.Randevu>
+
+
+ <br />
+ <br /><br /><br /><br />
+<br />
+<br />
+<br />
+<br />
+<table>
+    <thead>
+        <tr>
+            <th>Hizmet</th>
+            <th>Çalışan</th>
+            <th>Tarih</th>
+            <th>Durum</th>
+            <th>Onay</th>
+            <th>İşlemler</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var randevu in Model)
+        {
+            <tr>
+                <td>@randevu.Hizmet.Ad</td>
+                <td>@randevu.Calisan.AdSoyad</td>
+                <td>@randevu.RandevuTarihi</td>
+                <td>@randevu.Durum</td>
+                <td>@randevu.Onay</td>
+                <td>
+                    <a href="@Url.Action("Onayla", "Admin", new { id = randevu.Id })">Onayla</a> |
+                    <a href="@Url.Action("RedEt", "Admin", new { id = randevu.Id })">Reddet</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

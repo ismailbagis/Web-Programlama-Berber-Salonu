@@ -1,0 +1,36 @@
+﻿@model Eci_website.ViewModel.RegisterViewModel
+
+<br />
+<br />
+<br />
+<br />
+<h2>Kayıt Ol</h2>
+<br />
+<form asp-action="Register" method="post">
+    <div>
+        <label for="username">Kullanıcı Adı</label>
+        <input asp-for="UserName" />
+        <span asp-validation-for="UserName"></span>
+    </div>
+    <div>
+        <label for="username">Ad Soyad :</label>
+        <input asp-for="FullName" />
+        <span asp-validation-for="FullName"></span>
+    </div>
+    <div>
+        <label for="email">E-mail</label>
+        <input asp-for="Email" />
+        <span asp-validation-for="Email"></span>
+    </div>
+    <div>
+        <label for="password">Parola</label>
+        <input asp-for="Password" type="password" />
+        <span asp-validation-for="Password"></span>
+    </div>
+    <div>
+        <label for="confirmPassword">Parola (Tekrar)</label>
+        <input asp-for="ConfirmPassword" type="password" />
+        <span asp-validation-for="ConfirmPassword"></span>
+    </div>
+    <button type="submit">Kayıt Ol</button>
+</form>

@@ -1,0 +1,40 @@
+﻿@model Eci_website.ViewModel.RandevuAlViewModel
+
+<form method="post">
+    <div>
+        <label for="calisan">Çalışan Seç</label>
+        <select id="calisan" name="calisanId">
+            @foreach (var calisan in Model.Calisanlar)
+            {
+                <option value="@calisan.Id">@calisan.AdSoyad</option>
+            }
+        </select>
+    </div>
+
+    <div>
+        <label for="hizmet">Hizmet Seç</label>
+        <select id="hizmet" name="hizmetId">
+            @foreach (var hizmet in Model.Hizmetler)
+            {
+                <option value="@hizmet.Id">@hizmet.Ad</option>
+            }
+        </select>
+    </div>
+
+    <div>
+        <label for="randevuTarihi">Randevu Tarihi ve Saati</label>
+        <input type="datetime-local" id="randevuTarihi" name="randevuTarihi" required />
+    </div>
+
+    <div>
+        <h3>Çalışan Çalışma Saatleri:</h3>
+        <ul>
+            @foreach (var calisan in Model.Calisanlar)
+            {
+                <li>@calisan.AdSoyad: @calisan.CalismaBaslangicFormatted - @calisan.CalismaBitisFormatted</li>
+            }
+        </ul>
+    </div>
+
+    <button type="submit">Randevu Al</button>
+</form>

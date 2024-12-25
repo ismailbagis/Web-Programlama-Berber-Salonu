@@ -1,10 +1,15 @@
 ﻿@model IEnumerable<Calisan>
-
+@{
+    var isAdmin = User.IsInRole("admin"); // Check if the user is in the Admin role
+}
 
 <h2>Çalışanlar</h2>
 <hr>
+@if (isAdmin)
+{
+    <a href="/Calisan/Create" class="btn btn-primary mb-3">Çalışan Ekle</a>
+}
 
-<a href="/Calisan/Create" class="btn btn-primary mb-3">Çalışan Ekle</a>
 
 <div class="row">
     @foreach (var item in Model)
@@ -16,14 +21,18 @@
                     <p class="card-text">
                         <strong>Telefon:</strong> @Html.DisplayFor(modelItem => item.Telefon) <br />
                         <strong>Uzmanlık Alanı :</strong> @Html.DisplayFor(modelItem => item.UzmanlikAlani)<br />
-                        <strong>Uygunluk Saatleri:</strong> @Html.DisplayFor(modelItem => item.Uygunluk)<br />
+                        <strong>Uygunluk Saatleri:</strong> @Html.DisplayFor(modelItem => item.CalismaBaslangic)<br />
+                        <strong>Uygunluk Saatleri:</strong> @Html.DisplayFor(modelItem => item.CalismaBitis)<br />
                         <strong> Salon :</strong> @Html.DisplayFor(modelItem => item.Salon.Ad)<br />
 
                     </p>
-                    <div class="d-flex justify-content-between">
-                        @*                         <a asp-controller="Calisan" asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-primary">Detaylar</a> *@
-                        <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger">Sil</a>
-                    </div>
+                    @if (isAdmin)
+                    {
+                        <div class="d-flex justify-content-between">
+                            @*                         <a asp-controller="Calisan" asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-primary">Detaylar</a> *@
+                            <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger">Sil</a>
+                        </div>
+                    }
                 </div>
             </div>
         </div>

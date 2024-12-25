@@ -3,9 +3,15 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Eci_website.Models
 {
+    public enum RandevuDurum
+    {
+        Bekliyor,    // Randevu bekliyor
+        Onaylandi,   // Randevu onaylandı
+        Rededildi    // Randevu reddedildi
+    }
+
     public class Randevu
     {
-
         [Key]
         public int Id { get; set; }
         public DateTime RandevuTarihi { get; set; }
@@ -21,5 +27,8 @@ namespace Eci_website.Models
         public string? MusteriAdi { get; set; }
         public string? MusteriTelefon { get; set; }
         public bool Onay { get; set; }
+
+        // Adding RandevuDurum enum
+        public RandevuDurum Durum { get; set; } // Default value is "Bekliyor"
     }
 }

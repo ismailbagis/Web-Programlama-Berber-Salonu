@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Eci_website.Migrations
 {
     [DbContext(typeof(IdentityContext))]
-    [Migration("20241219234421_InitialCreate2")]
-    partial class InitialCreate2
+    [Migration("20241224154336_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -25,7 +25,7 @@ namespace Eci_website.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("Eci_website.Models.Calisan", b =>
+            modelBuilder.Entity("Calisan", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -36,6 +36,12 @@ namespace Eci_website.Migrations
                     b.Property<string>("Ad")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<TimeSpan>("CalismaBaslangic")
+                        .HasColumnType("time");
+
+                    b.Property<TimeSpan>("CalismaBitis")
+                        .HasColumnType("time");
+
                     b.Property<int>("SalonId")
                         .HasColumnType("int");
 
@@ -43,9 +49,6 @@ namespace Eci_website.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Telefon")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Uygunluk")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("UzmanlikAlani")
@@ -98,6 +101,9 @@ namespace Eci_website.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<int>("CalisanId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Durum")
                         .HasColumnType("int");
 
                     b.Property<int>("HizmetId")
@@ -353,7 +359,7 @@ namespace Eci_website.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("Eci_website.Models.Calisan", b =>
+            modelBuilder.Entity("Calisan", b =>
                 {
                     b.HasOne("Eci_website.Models.Salon", "Salon")
                         .WithMany()
@@ -377,7 +383,7 @@ namespace Eci_website.Migrations
 
             modelBuilder.Entity("Eci_website.Models.Randevu", b =>
                 {
-                    b.HasOne("Eci_website.Models.Calisan", "Calisan")
+                    b.HasOne("Calisan", "Calisan")
                         .WithMany("Randevular")
                         .HasForeignKey("CalisanId")
                         .OnDelete(DeleteBehavior.Restrict)
@@ -445,7 +451,7 @@ namespace Eci_website.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("Eci_website.Models.Calisan", b =>
+            modelBuilder.Entity("Calisan", b =>
                 {
                     b.Navigation("Randevular");
                 });

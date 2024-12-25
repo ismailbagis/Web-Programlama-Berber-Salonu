@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Eci_website.Models
 {
-    public class IdentityContext : IdentityDbContext<Kullanici,Rol,string>
+    public class IdentityContext : IdentityDbContext<Kullanici, Rol, string>
     {
         public IdentityContext(DbContextOptions<IdentityContext> options) : base(options)
         {

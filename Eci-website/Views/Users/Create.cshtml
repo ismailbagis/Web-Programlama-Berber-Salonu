@@ -10,7 +10,11 @@
 <form asp-action="Create" method="post">
     <div asp-validation-summary="All" class="text-danger"></div>
     <div class="mb-3">
-        <label asp-for="FullName"> Kullanıcı Adı</label>
+        <label asp-for="UserName"> Kullanıcı Adı</label>
+        <input asp-for="UserName" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label asp-for="FullName"> Ad Soyad </label>
         <input asp-for="FullName" class="form-control" />
     </div>
     <div class="mb-3">

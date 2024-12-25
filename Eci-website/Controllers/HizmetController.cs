@@ -24,6 +24,10 @@ namespace Eci_website.Controllers
 
         public async Task<IActionResult> Create()
         {
+            if (!User.IsInRole("admin"))
+            {
+                return RedirectToAction("Index", "Home");
+            }
             ViewBag.Salonlar = new SelectList(await _context.Salonlar.ToListAsync(), "Id", "Ad");
             return View();
         }
@@ -32,6 +36,10 @@ namespace Eci_website.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(Hizmet model)
         {
+            if (!User.IsInRole("admin"))
+            {
+                return RedirectToAction("Index", "Home");
+            }
             _context.Hizmetler.Add(model);
             await _context.SaveChangesAsync();
             return RedirectToAction("Index");

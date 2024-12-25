@@ -30,7 +30,7 @@ namespace Eci_website.Migrations
                 columns: table => new
                 {
                     Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    FullName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    FullName = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     UserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
                     NormalizedUserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
                     Email = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
@@ -184,7 +184,8 @@ namespace Eci_website.Migrations
                     Soyad = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Telefon = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     UzmanlikAlani = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Uygunluk = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    CalismaBaslangic = table.Column<TimeSpan>(type: "time", nullable: false),
+                    CalismaBitis = table.Column<TimeSpan>(type: "time", nullable: false),
                     SalonId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
@@ -232,7 +233,8 @@ namespace Eci_website.Migrations
                     CalisanId = table.Column<int>(type: "int", nullable: false),
                     MusteriAdi = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     MusteriTelefon = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Onay = table.Column<bool>(type: "bit", nullable: false)
+                    Onay = table.Column<bool>(type: "bit", nullable: false),
+                    Durum = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {

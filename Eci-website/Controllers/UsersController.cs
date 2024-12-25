@@ -1,18 +1,20 @@
 ﻿using Eci_website.ViewModel;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace Eci_website.Models
 {
     public class UsersController : Controller
     {
         private readonly UserManager<Kullanici> _userManager;
-
-        public UsersController(UserManager<Kullanici> userManager)
+        private readonly RoleManager<Rol> _roleManager;
+        public UsersController(UserManager<Kullanici> userManager,RoleManager<Rol> roleManager)
         {
             _userManager = userManager;
+            _roleManager = roleManager;
         }
-
         public IActionResult Index()
         {
             var users = _userManager.Users;
@@ -32,7 +34,7 @@ namespace Eci_website.Models
         {
             if (ModelState.IsValid)
             {
-                var user = new Kullanici { UserName = model.Email, Email = model.Email, FullName = model.FullName };
+                var user = new Kullanici { UserName = model.UserName, Email = model.Email, FullName = model.FullName };
                 IdentityResult result =  await _userManager.CreateAsync(user,model.Password);
                 if (result.Succeeded)
                 {
@@ -51,7 +53,7 @@ namespace Eci_website.Models
         [HttpGet]
         public async Task<IActionResult> Edit(string id)
         {
-            if(id==null)
+            if (id==null)
             {
                 return RedirectToAction("Index");
             }
@@ -60,12 +62,14 @@ namespace Eci_website.Models
 
             if (user != null)
             {
+                ViewBag.Roles = await _roleManager.Roles.Select(i=>i.Name).ToListAsync();
                 return View(new EditViewModel
                 {
 
                     Id =user.Id,
                     FullName = user.FullName,
-                    Email = user.Email
+                    Email = user.Email,
+                    SelectedRoles = await _userManager.GetRolesAsync(user)
                 });
             }
 
@@ -75,7 +79,7 @@ namespace Eci_website.Models
         [HttpPost]
         public async Task<IActionResult> Edit(string id,EditViewModel model)
         {
-            if(id != model.Id)
+            if (id != model.Id)
             {
                 return RedirectToAction("Index");
             }
@@ -99,6 +103,12 @@ namespace Eci_website.Models
 
                     if(result.Succeeded)
                     {
+                        await _userManager.RemoveFromRolesAsync(user,await _userManager.GetRolesAsync(user));
+                       if(model.SelectedRoles != null)
+                        {
+                            await _userManager.AddToRolesAsync(user, model.SelectedRoles);
+
+                        }
                         return RedirectToAction("Index");
                     }
 

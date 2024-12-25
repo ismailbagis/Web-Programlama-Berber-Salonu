@@ -24,6 +24,10 @@ namespace Eci_website.Controllers
         }
         public async Task<IActionResult> Create()
         {
+            if(!User.IsInRole("admin"))
+            {
+                return RedirectToAction("Index", "Home");
+            }
             ViewBag.Salonlar = new SelectList(await _context.Salonlar.ToListAsync(), "Id", "Ad");
             return View();
         }
@@ -32,6 +36,10 @@ namespace Eci_website.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(Calisan model)
         {
+            if (!User.IsInRole("admin"))
+            {
+                return RedirectToAction("Index", "Home");
+            }
             _context.Calisanlar.Add(model);
             await _context.SaveChangesAsync();
             return RedirectToAction("Index");
@@ -40,6 +48,10 @@ namespace Eci_website.Controllers
         [HttpGet]
         public async Task<IActionResult> Edit(int? id)
         {
+            if (!User.IsInRole("admin"))
+            {
+                return RedirectToAction("Index", "Home");
+            }
             if (id == null || _context.Calisanlar == null)
             {
                 return NotFound();
@@ -61,6 +73,10 @@ namespace Eci_website.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, Calisan model)
         {
+            if (!User.IsInRole("admin"))
+            {
+                return RedirectToAction("Index", "Home");
+            }
             // Gelen modelin Id'si doğru değilse hata döndür.
             if (id != model.Id)
             {
@@ -101,6 +117,10 @@ namespace Eci_website.Controllers
         [HttpGet]
         public async Task<IActionResult> Delete(int id)
         {
+            if (!User.IsInRole("admin"))
+            {
+                return RedirectToAction("Index", "Home");
+            }
             var calisan = await _context.Calisanlar.FindAsync(id);
             if (calisan == null)
             {

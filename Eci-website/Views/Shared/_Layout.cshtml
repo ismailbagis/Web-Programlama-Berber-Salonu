@@ -27,14 +27,31 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="/Home">Anasayfa</a></li>
                     <li class="nav-item"><a class="nav-link" href="/Hizmet">Hizmetler</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#footer">İletişim</a></li>
                     <li class="nav-item"><a class="nav-link" href="/Salon">Salonlar</a></li>
                     <li class="nav-item"><a class="nav-link" href="/Calisan">Çalışanlar</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/Randevu">Randevu Al</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/Admin/Login">Giriş</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/Users/Index">Kullanıcılar</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/Roles/Index">Roler</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Randevu/CalisanSec">Randevu Al</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#footer">İletişim</a></li>
+                    @if (User.Identity?.IsAuthenticated == true)
+                    {
+                        if(User.IsInRole("admin"))
+                        {
 
+                            <li class="nav-item"><a class="nav-link" href="/Users/Index">Kullanıcılar</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/Roles/Index">Roler</a></li>
+                        }
+
+                    }
+
+                    @if(User.Identity?.IsAuthenticated == true)
+                    {
+                        <li class="nav-item"><a class="nav-link">Merhaba, @User.Identity.Name</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/Account/Logout">Çıkış Yap</a></li>
+                    }
+                    else
+                    {
+                        <li class="nav-item"><a class="nav-link" href="/Account/Login">Giriş</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/Account/Register">Kayıt Ol</a></li>
+                    }
                 </ul>
             </div>
         </div>

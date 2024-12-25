@@ -16,6 +16,7 @@ namespace Eci_website.Controllers
 
         public async Task<IActionResult> Index()
         {
+
             var salonlar = await _context.Salonlar.ToListAsync();
 
             return View(salonlar);
@@ -23,12 +24,20 @@ namespace Eci_website.Controllers
 
         public IActionResult Create()
         {
+            if (!User.IsInRole("admin"))
+            {
+                return RedirectToAction("Index", "Home");
+            }
             return View();
         }
 
         [HttpPost]
         public async Task<IActionResult> Create(Salon model, IFormFile? imageFile)
         {
+            if (!User.IsInRole("admin"))
+            {
+                return RedirectToAction("Index", "Home");
+            }
             if (imageFile != null)
             {
                 // Resim dosyasını wwwroot/images klasörüne kaydedin
@@ -52,6 +61,10 @@ namespace Eci_website.Controllers
         [HttpGet]
         public async Task<IActionResult> Edit(int id)
         {
+            if (!User.IsInRole("admin"))
+            {
+                return RedirectToAction("Index", "Home");
+            }
             var salon = await _context.Salonlar.FindAsync(id);
             if (salon == null)
                 return NotFound();
@@ -62,6 +75,10 @@ namespace Eci_website.Controllers
         [HttpPost]
         public async Task<IActionResult> Edit(int id, Salon model, IFormFile? imageFile)
         {
+            if (!User.IsInRole("admin"))
+            {
+                return RedirectToAction("Index", "Home");
+            }
             if (!ModelState.IsValid)
             {
                 return View(model); // Model doğrulama başarısızsa aynı sayfayı göster.
@@ -109,6 +126,10 @@ namespace Eci_website.Controllers
         [HttpGet]
         public async Task<IActionResult> Delete(int id)
         {
+            if (!User.IsInRole("admin"))
+            {
+                return RedirectToAction("Index", "Home");
+            }
             var salon = await _context.Salonlar.FindAsync(id);
             if (salon == null)
             {
