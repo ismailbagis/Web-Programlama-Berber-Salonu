@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\ViewModel",
+    "\\Views",
+    "\\Views\\Randevu"
   ],
+  "SelectedNode": "\\ViewModel\\CreateViewModel.cs",
   "PreviewInSolutionExplorer": false
 }

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Eci-website")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+79e1dc80b6fbd4b1b46ea79992dcecd3023aee22")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fcc289aa76ddd41226c8094d53152212e7c953fd")]
 [assembly: System.Reflection.AssemblyProductAttribute("Eci-website")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Eci-website")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
