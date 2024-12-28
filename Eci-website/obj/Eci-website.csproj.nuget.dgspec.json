@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rog\\Desktop\\site yedek 3\\Eci-website\\Eci-website.csproj": {}
+    "C:\\Users\\Tunahan Özdemir\\Documents\\GitHub\\Web-Programlama-Berber-Salonu\\Eci-website\\Eci-website.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rog\\Desktop\\site yedek 3\\Eci-website\\Eci-website.csproj": {
+    "C:\\Users\\Tunahan Özdemir\\Documents\\GitHub\\Web-Programlama-Berber-Salonu\\Eci-website\\Eci-website.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rog\\Desktop\\site yedek 3\\Eci-website\\Eci-website.csproj",
+        "projectUniqueName": "C:\\Users\\Tunahan Özdemir\\Documents\\GitHub\\Web-Programlama-Berber-Salonu\\Eci-website\\Eci-website.csproj",
         "projectName": "Eci-website",
-        "projectPath": "C:\\Users\\rog\\Desktop\\site yedek 3\\Eci-website\\Eci-website.csproj",
-        "packagesPath": "C:\\Users\\rog\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rog\\Desktop\\site yedek 3\\Eci-website\\obj\\",
+        "projectPath": "C:\\Users\\Tunahan Özdemir\\Documents\\GitHub\\Web-Programlama-Berber-Salonu\\Eci-website\\Eci-website.csproj",
+        "packagesPath": "C:\\Users\\Tunahan Özdemir\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Tunahan Özdemir\\Documents\\GitHub\\Web-Programlama-Berber-Salonu\\Eci-website\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\rog\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Tunahan Özdemir\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

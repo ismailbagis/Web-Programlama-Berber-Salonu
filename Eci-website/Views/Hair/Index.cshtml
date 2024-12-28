@@ -22,27 +22,6 @@
         </select>
     </div>
 
-    <div>
-        <label for="hairType2">Saç Tipi 2:</label>
-        <select name="hairType2" id="hairType2">
-            <option value="">Seçiniz</option>
-            @foreach (var item in ViewBag.HairTypeNames as Dictionary<string, string>)
-            {
-                <option value="@item.Key">@item.Value</option>
-            }
-        </select>
-    </div>
-
-    <div>
-        <label for="hairType3">Saç Tipi 3:</label>
-        <select name="hairType3" id="hairType3">
-            <option value="">Seçiniz</option>
-            @foreach (var item in ViewBag.HairTypeNames as Dictionary<string, string>)
-            {
-                <option value="@item.Key">@item.Value</option>
-            }
-        </select>
-    </div>
 
     <button type="submit">Gönder</button>
 </form>

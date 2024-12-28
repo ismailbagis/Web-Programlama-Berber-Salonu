@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Eci-website")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+89eab4584ab6918381fb1e1ce34f1af14dd9ebc2")]
 [assembly: System.Reflection.AssemblyProductAttribute("Eci-website")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Eci-website")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
