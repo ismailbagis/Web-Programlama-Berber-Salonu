@@ -2,10 +2,13 @@
 
 namespace Eci_website.ViewModel
 {
-    public class RandevuAlViewModel
+    public class RandevuViewModel
     {
-        public List<Calisan> Calisanlar { get; set; }
-        public List<Hizmet> Hizmetler { get; set; }
         public DateTime RandevuTarihi { get; set; }
+        public TimeSpan RandevuSaati { get; set; } // Randevu saati bilgisi için eklendi.
+        public int HizmetId { get; set; }
+        public int CalisanId { get; set; }
+        public required List<Hizmet> Hizmetler { get; set; }
+        public required List<Calisan> Calisanlar { get; set; }
     }
 }

@@ -1,0 +1,46 @@
+﻿@model IEnumerable<Eci_website.Models.Randevu>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<h2>Randevularım</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Hizmet</th>
+            <th>Çalışan</th>
+            <th>Randevu Tarihi</th>
+            <th>Randevu Saati</th> <!-- Yeni sütun -->
+            <th>Onay Durumu</th>
+            <th>Müşteri Adı</th>
+            <th>Müşteri Telefonu</th>
+            <th>İşlemler</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var randevu in Model)
+        {
+            <tr>
+                <td>@randevu.Hizmet.Ad</td>
+                <td>@randevu.Calisan.AdSoyad</td>
+                <td>@randevu.RandevuTarihi.ToString("yyyy-MM-dd")</td>
+                <td>@randevu.RandevuSaati.ToString(@"hh\:mm")</td> <!-- Saat bilgisi -->
+                <td>@randevu.Durum.ToString() - @(randevu.Onay ? "Onaylı" : "Bekliyor")</td>
+                <td>@randevu.MusteriAdi</td>
+                <td>@randevu.MusteriTelefon</td>
+                <td>
+                    <a href="@Url.Action("Edit", "Randevu", new { id = randevu.Id })" class="btn btn-warning">Düzenle</a>
+                    <form asp-action="Cancel" asp-controller="Randevu" method="post" style="display:inline;">
+                        <input type="hidden" name="id" value="@randevu.Id" />
+                        <button type="submit" class="btn btn-danger" onclick="return confirm('Bu randevuyu iptal etmek istediğinize emin misiniz?');">
+                            İptal Et
+                        </button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

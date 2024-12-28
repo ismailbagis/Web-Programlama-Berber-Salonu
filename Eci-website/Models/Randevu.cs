@@ -30,5 +30,6 @@ namespace Eci_website.Models
 
         // Adding RandevuDurum enum
         public RandevuDurum Durum { get; set; } // Default value is "Bekliyor"
+        public TimeSpan RandevuSaati { get; internal set; }
     }
 }

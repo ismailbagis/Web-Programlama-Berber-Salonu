@@ -22,7 +22,7 @@ namespace Eci_website.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("Calisan", b =>
+            modelBuilder.Entity("Eci_website.Models.Calisan", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -33,12 +33,6 @@ namespace Eci_website.Migrations
                     b.Property<string>("Ad")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<TimeSpan>("CalismaBaslangic")
-                        .HasColumnType("time");
-
-                    b.Property<TimeSpan>("CalismaBitis")
-                        .HasColumnType("time");
-
                     b.Property<int>("SalonId")
                         .HasColumnType("int");
 
@@ -46,6 +40,9 @@ namespace Eci_website.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Telefon")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Uygunluk")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("UzmanlikAlani")
@@ -114,6 +111,9 @@ namespace Eci_website.Migrations
 
                     b.Property<bool>("Onay")
                         .HasColumnType("bit");
+
+                    b.Property<TimeSpan>("RandevuSaati")
+                        .HasColumnType("time");
 
                     b.Property<DateTime>("RandevuTarihi")
                         .HasColumnType("datetime2");
@@ -356,7 +356,7 @@ namespace Eci_website.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("Calisan", b =>
+            modelBuilder.Entity("Eci_website.Models.Calisan", b =>
                 {
                     b.HasOne("Eci_website.Models.Salon", "Salon")
                         .WithMany()
@@ -380,7 +380,7 @@ namespace Eci_website.Migrations
 
             modelBuilder.Entity("Eci_website.Models.Randevu", b =>
                 {
-                    b.HasOne("Calisan", "Calisan")
+                    b.HasOne("Eci_website.Models.Calisan", "Calisan")
                         .WithMany("Randevular")
                         .HasForeignKey("CalisanId")
                         .OnDelete(DeleteBehavior.Restrict)
@@ -448,7 +448,7 @@ namespace Eci_website.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("Calisan", b =>
+            modelBuilder.Entity("Eci_website.Models.Calisan", b =>
                 {
                     b.Navigation("Randevular");
                 });

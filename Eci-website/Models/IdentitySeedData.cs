@@ -7,8 +7,8 @@ namespace Eci_website.ViewModel
     public static class IdentitySeedData
     {
         private const string adminUser = "admin";
-        private const string adminPassword = "Admin_123";
-        private const string adminEmail = "admin@ismailbagis.com";
+        private const string adminPassword = "sau";
+        private const string adminEmail = "ismail.bagis@ogr.sakarya.edu.tr";
         private const string adminPhoneNumber = "05469388323";
         private const string adminFullName = "İsmail Bağış";
 

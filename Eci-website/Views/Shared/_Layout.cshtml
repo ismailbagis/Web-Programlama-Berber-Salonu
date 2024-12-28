@@ -17,7 +17,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#page-top">
-                <img style="width:150px; height: 150px;border-radius: 20px" src="~/img/logoeci.png" alt="ECİ BERBER Logo">
+                <img style="width:150px; height: 150px;border-radius: 20px" src="~/img/logoeci.jpg" alt="ECİ BERBER Logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
                     aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,7 +29,7 @@
                     <li class="nav-item"><a class="nav-link" href="/Hizmet">Hizmetler</a></li>
                     <li class="nav-item"><a class="nav-link" href="/Salon">Salonlar</a></li>
                     <li class="nav-item"><a class="nav-link" href="/Calisan">Çalışanlar</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/Randevu/CalisanSec">Randevu Al</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Randevu/RandevuAl">Randevu Al</a></li>
                     <li class="nav-item"><a class="nav-link" href="#footer">İletişim</a></li>
                     @if (User.Identity?.IsAuthenticated == true)
                     {
@@ -37,8 +37,19 @@
                         {
 
                             <li class="nav-item"><a class="nav-link" href="/Users/Index">Kullanıcılar</a></li>
-                            <li class="nav-item"><a class="nav-link" href="/Roles/Index">Roler</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/Roles/Index">Roller</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/Admin/Randevular">Randevular</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/Admin/Kazanc">Kazanç</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/Randevu/Randevularim">Randevularım</a></li>
                         }
+
+                        if (User.IsInRole("kullanici"))
+                        {
+
+                            <li class="nav-item"><a class="nav-link" href="/Randevu/Randevularim">Randevularım</a></li>
+                        }
+
+
 
                     }
 

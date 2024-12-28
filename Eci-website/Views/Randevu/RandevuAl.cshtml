@@ -1,40 +1,38 @@
-﻿@model Eci_website.ViewModel.RandevuAlViewModel
+﻿@model Eci_website.ViewModel.RandevuViewModel
 
-<form method="post">
-    <div>
-        <label for="calisan">Çalışan Seç</label>
-        <select id="calisan" name="calisanId">
-            @foreach (var calisan in Model.Calisanlar)
-            {
-                <option value="@calisan.Id">@calisan.AdSoyad</option>
-            }
-        </select>
-    </div>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<form asp-action="RandevuAl" method="post">
+    <label for="HizmetId">Hizmet Seçin:</label>
+    <select asp-for="HizmetId" asp-items="@(new SelectList(Model.Hizmetler, "Id", "Ad"))"></select>
 
-    <div>
-        <label for="hizmet">Hizmet Seç</label>
-        <select id="hizmet" name="hizmetId">
-            @foreach (var hizmet in Model.Hizmetler)
-            {
-                <option value="@hizmet.Id">@hizmet.Ad</option>
-            }
-        </select>
-    </div>
+    <label for="CalisanId">Çalışan Seçin:</label>
+    <select asp-for="CalisanId" asp-items="@(new SelectList(Model.Calisanlar, "Id", "AdSoyad"))"></select>
 
-    <div>
-        <label for="randevuTarihi">Randevu Tarihi ve Saati</label>
-        <input type="datetime-local" id="randevuTarihi" name="randevuTarihi" required />
-    </div>
+    <label for="RandevuTarihi">Randevu Tarihi:</label>
+    <input asp-for="RandevuTarihi" value="@DateTime.Now.ToString("yyyy-MM-dd")" type="date" />
 
-    <div>
-        <h3>Çalışan Çalışma Saatleri:</h3>
-        <ul>
-            @foreach (var calisan in Model.Calisanlar)
-            {
-                <li>@calisan.AdSoyad: @calisan.CalismaBaslangicFormatted - @calisan.CalismaBitisFormatted</li>
-            }
-        </ul>
-    </div>
 
+    <label for="RandevuSaati">Randevu Saati:</label>
+    <select asp-for="RandevuSaati">
+        <option value="08:00">08:00</option>
+        <option value="09:00">09:00</option>
+        <option value="10:00">10:00</option>
+        <option value="11:00">11:00</option>
+        <option value="12:00">12:00</option>
+        <option value="13:00">13:00</option>
+        <option value="14:00">14:00</option>
+        <option value="15:00">15:00</option>
+        <option value="16:00">16:00</option>
+        <option value="17:00">17:00</option>
+        <option value="18:00">18:00</option>
+    </select>
     <button type="submit">Randevu Al</button>
 </form>

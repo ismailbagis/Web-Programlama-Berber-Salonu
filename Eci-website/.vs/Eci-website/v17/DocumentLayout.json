@@ -1,12 +1,220 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Tunahan \u00D6zdemir\\Documents\\GitHub\\Web-Programlama-Berber-Salonu\\Eci-website\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\rog\\Desktop\\site yedek 3\\Eci-website\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{911E44E3-CA21-4CA0-A8D7-B0262537A17C}|Eci-website.csproj|c:\\users\\rog\\desktop\\site yedek 3\\eci-website\\models\\identityseeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{911E44E3-CA21-4CA0-A8D7-B0262537A17C}|Eci-website.csproj|solutionrelative:models\\identityseeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{911E44E3-CA21-4CA0-A8D7-B0262537A17C}|Eci-website.csproj|c:\\users\\rog\\desktop\\site yedek 3\\eci-website\\views\\randevu\\randevularim.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{911E44E3-CA21-4CA0-A8D7-B0262537A17C}|Eci-website.csproj|solutionrelative:views\\randevu\\randevularim.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{911E44E3-CA21-4CA0-A8D7-B0262537A17C}|Eci-website.csproj|c:\\users\\rog\\desktop\\site yedek 3\\eci-website\\views\\randevu\\randevual.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{911E44E3-CA21-4CA0-A8D7-B0262537A17C}|Eci-website.csproj|solutionrelative:views\\randevu\\randevual.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{911E44E3-CA21-4CA0-A8D7-B0262537A17C}|Eci-website.csproj|c:\\users\\rog\\desktop\\site yedek 3\\eci-website\\models\\randevu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{911E44E3-CA21-4CA0-A8D7-B0262537A17C}|Eci-website.csproj|solutionrelative:models\\randevu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{911E44E3-CA21-4CA0-A8D7-B0262537A17C}|Eci-website.csproj|c:\\users\\rog\\desktop\\site yedek 3\\eci-website\\viewmodel\\randevuviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{911E44E3-CA21-4CA0-A8D7-B0262537A17C}|Eci-website.csproj|solutionrelative:viewmodel\\randevuviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{911E44E3-CA21-4CA0-A8D7-B0262537A17C}|Eci-website.csproj|c:\\users\\rog\\desktop\\site yedek 3\\eci-website\\controllers\\randevucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{911E44E3-CA21-4CA0-A8D7-B0262537A17C}|Eci-website.csproj|solutionrelative:controllers\\randevucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{911E44E3-CA21-4CA0-A8D7-B0262537A17C}|Eci-website.csproj|c:\\users\\rog\\desktop\\site yedek 3\\eci-website\\views\\admin\\randevular.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{911E44E3-CA21-4CA0-A8D7-B0262537A17C}|Eci-website.csproj|solutionrelative:views\\admin\\randevular.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{911E44E3-CA21-4CA0-A8D7-B0262537A17C}|Eci-website.csproj|c:\\users\\rog\\desktop\\site yedek 3\\eci-website\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{911E44E3-CA21-4CA0-A8D7-B0262537A17C}|Eci-website.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rog\\Desktop\\site yedek 3\\Eci-website\\Migrations\\20241227223220_AddColumnRandevu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20241227223220_AddColumnRandevu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{911E44E3-CA21-4CA0-A8D7-B0262537A17C}|Eci-website.csproj|c:\\users\\rog\\desktop\\site yedek 3\\eci-website\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{911E44E3-CA21-4CA0-A8D7-B0262537A17C}|Eci-website.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{911E44E3-CA21-4CA0-A8D7-B0262537A17C}|Eci-website.csproj|c:\\users\\rog\\desktop\\site yedek 3\\eci-website\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{911E44E3-CA21-4CA0-A8D7-B0262537A17C}|Eci-website.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{911E44E3-CA21-4CA0-A8D7-B0262537A17C}|Eci-website.csproj|c:\\users\\rog\\desktop\\site yedek 3\\eci-website\\migrations\\20241227223711_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{911E44E3-CA21-4CA0-A8D7-B0262537A17C}|Eci-website.csproj|solutionrelative:migrations\\20241227223711_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Randevu.cs",
+              "DocumentMoniker": "C:\\Users\\rog\\Desktop\\site yedek 3\\Eci-website\\Models\\Randevu.cs",
+              "RelativeDocumentMoniker": "Models\\Randevu.cs",
+              "ToolTip": "C:\\Users\\rog\\Desktop\\site yedek 3\\Eci-website\\Models\\Randevu.cs",
+              "RelativeToolTip": "Models\\Randevu.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAkwCMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T08:55:22.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Randevularim.cshtml",
+              "DocumentMoniker": "C:\\Users\\rog\\Desktop\\site yedek 3\\Eci-website\\Views\\Randevu\\Randevularim.cshtml",
+              "RelativeDocumentMoniker": "Views\\Randevu\\Randevularim.cshtml",
+              "ToolTip": "C:\\Users\\rog\\Desktop\\site yedek 3\\Eci-website\\Views\\Randevu\\Randevularim.cshtml",
+              "RelativeToolTip": "Views\\Randevu\\Randevularim.cshtml",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAswBEAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-28T08:52:37.441Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "20241227223711_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\rog\\Desktop\\site yedek 3\\Eci-website\\Migrations\\20241227223711_InitialCreate.cs",
+              "RelativeDocumentMoniker": "Migrations\\20241227223711_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\rog\\Desktop\\site yedek 3\\Eci-website\\Migrations\\20241227223711_InitialCreate.cs",
+              "RelativeToolTip": "Migrations\\20241227223711_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-27T22:37:11.582Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IdentitySeedData.cs",
+              "DocumentMoniker": "C:\\Users\\rog\\Desktop\\site yedek 3\\Eci-website\\Models\\IdentitySeedData.cs",
+              "RelativeDocumentMoniker": "Models\\IdentitySeedData.cs",
+              "ToolTip": "C:\\Users\\rog\\Desktop\\site yedek 3\\Eci-website\\Models\\IdentitySeedData.cs",
+              "RelativeToolTip": "Models\\IdentitySeedData.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAQwAcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-27T22:34:36.626Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "20241227223220_AddColumnRandevu.cs",
+              "DocumentMoniker": "C:\\Users\\rog\\Desktop\\site yedek 3\\Eci-website\\Migrations\\20241227223220_AddColumnRandevu.cs",
+              "RelativeDocumentMoniker": "Migrations\\20241227223220_AddColumnRandevu.cs",
+              "ToolTip": "C:\\Users\\rog\\Desktop\\site yedek 3\\Eci-website\\Migrations\\20241227223220_AddColumnRandevu.cs",
+              "RelativeToolTip": "Migrations\\20241227223220_AddColumnRandevu.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-27T22:32:21.121Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RandevuController.cs",
+              "DocumentMoniker": "C:\\Users\\rog\\Desktop\\site yedek 3\\Eci-website\\Controllers\\RandevuController.cs",
+              "RelativeDocumentMoniker": "Controllers\\RandevuController.cs",
+              "ToolTip": "C:\\Users\\rog\\Desktop\\site yedek 3\\Eci-website\\Controllers\\RandevuController.cs",
+              "RelativeToolTip": "Controllers\\RandevuController.cs",
+              "ViewState": "AgIAAI0AAAAAAAAAAAAiwK0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-27T22:27:18.541Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RandevuViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\rog\\Desktop\\site yedek 3\\Eci-website\\ViewModel\\RandevuViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\RandevuViewModel.cs",
+              "ToolTip": "C:\\Users\\rog\\Desktop\\site yedek 3\\Eci-website\\ViewModel\\RandevuViewModel.cs",
+              "RelativeToolTip": "ViewModel\\RandevuViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-27T22:19:39.419Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RandevuAl.cshtml",
+              "DocumentMoniker": "C:\\Users\\rog\\Desktop\\site yedek 3\\Eci-website\\Views\\Randevu\\RandevuAl.cshtml",
+              "RelativeDocumentMoniker": "Views\\Randevu\\RandevuAl.cshtml",
+              "ToolTip": "C:\\Users\\rog\\Desktop\\site yedek 3\\Eci-website\\Views\\Randevu\\RandevuAl.cshtml",
+              "RelativeToolTip": "Views\\Randevu\\RandevuAl.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-27T22:16:58.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\rog\\Desktop\\site yedek 3\\Eci-website\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\rog\\Desktop\\site yedek 3\\Eci-website\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Controllers\\AdminController.cs",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAQwHsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-27T22:14:35.592Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\rog\\Desktop\\site yedek 3\\Eci-website\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\rog\\Desktop\\site yedek 3\\Eci-website\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "wwwroot\\css\\site.css",
+              "ViewState": "AgIAACMBAAAAAAAAAAAAwEMBAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-12-27T22:11:44.975Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Randevular.cshtml",
+              "DocumentMoniker": "C:\\Users\\rog\\Desktop\\site yedek 3\\Eci-website\\Views\\Admin\\Randevular.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\Randevular.cshtml",
+              "ToolTip": "C:\\Users\\rog\\Desktop\\site yedek 3\\Eci-website\\Views\\Admin\\Randevular.cshtml",
+              "RelativeToolTip": "Views\\Admin\\Randevular.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABAAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-27T22:10:55.949Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\rog\\Desktop\\site yedek 3\\Eci-website\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\rog\\Desktop\\site yedek 3\\Eci-website\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAIQAAAAAAAAAAAAAADUAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-27T22:09:53.989Z"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

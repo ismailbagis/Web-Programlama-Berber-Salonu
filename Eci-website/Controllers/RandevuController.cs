@@ -1,105 +1,173 @@
 ﻿using Eci_website.Models;
 using Eci_website.ViewModel;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-namespace Eci_website.Controllers
+public class RandevuController : Controller
 {
-    public class RandevuController : Controller
+    private readonly UserManager<Kullanici> _userManager;
+    private readonly IdentityContext _context;
+
+    public RandevuController(UserManager<Kullanici> userManager, IdentityContext context)
     {
-        private readonly IdentityContext _context;
-
-        public RandevuController(IdentityContext context)
-        {
-            _context = context;
-        }
-
-        // Randevu almak için çalışanlar, hizmetler ve uygun saatler gösterilecek
-        public async Task<IActionResult> RandevuAl()
-        {
-            // Çalışanlar ve hizmetler veritabanından çekiliyor
-            var calisanlar = await _context.Calisanlar.ToListAsync();
-            var hizmetler = await _context.Hizmetler.ToListAsync();
-
-            // Model oluşturulacak ve veriler View'a gönderilecek
-            var viewModel = new RandevuAlViewModel
-            {
-                Calisanlar = calisanlar,
-                Hizmetler = hizmetler
-            };
-
-            return View(viewModel);
-        }
-
-        // Randevu ekleme işlemi
-        [HttpPost]
-        public async Task<IActionResult> RandevuAl(int calisanId, int hizmetId, DateTime randevuTarihi)
-        {
-            // Çalışanın çalışma saatleri kontrol edilecek
-            var calisan = await _context.Calisanlar.FindAsync(calisanId);
-            if (calisan == null)
-            {
-                return NotFound();
-            }
-
-            // Çalışanın çalışma saatleri
-            var calismaBaslangic = calisan.CalismaBaslangic;
-            var calismaBitis = calisan.CalismaBitis;
-
-            // Seçilen saat diliminin geçerli olup olmadığı kontrol edilecek
-            if (randevuTarihi.TimeOfDay < calismaBaslangic || randevuTarihi.TimeOfDay >= calismaBitis)
-            {
-                ModelState.AddModelError("", "Geçersiz saat dilimi seçtiniz. Lütfen çalışanın çalışma saatlerine dikkat edin.");
-                return View();
-            }
-
-            // Hizmet süresi bilgisi alınacak
-            var hizmet = await _context.Hizmetler.FindAsync(hizmetId);
-            if (hizmet == null || !hizmet.Sure.HasValue)
-            {
-                ModelState.AddModelError("", "Seçilen hizmetin süresi bulunamadı.");
-                return View();
-            }
-
-            // Hizmet süresi dikkate alınarak saat aralığı kontrol edilecek
-            var hizmetSure = TimeSpan.FromMinutes(hizmet.Sure.Value);
-            var randevuBitis = randevuTarihi.Add(hizmetSure);
-
-            // Çalışanın randevuları ile çakışma kontrolü yapılacak
-            var mevcutRandevular = await _context.Randevular
-                .Where(r => r.CalisanId == calisanId &&
-                            r.RandevuTarihi < randevuBitis &&
-                            r.RandevuTarihi.AddMinutes(r.Hizmet.Sure ?? 0) > randevuTarihi)
-                .ToListAsync();
-
-            if (mevcutRandevular.Any())
-            {
-                ModelState.AddModelError("", "Bu saat diliminde çalışan zaten randevu almış. Lütfen başka bir saat seçin.");
-                return View();
-            }
-
-            // Yeni randevu ekleme işlemi
-            var yeniRandevu = new Randevu
-            {
-                CalisanId = calisanId,
-                HizmetId = hizmetId,
-                RandevuTarihi = randevuTarihi,
-                MusteriAdi = "Müşteri Adı",  // Kullanıcı bilgileri burada alınacak
-                MusteriTelefon = "Telefon Numarası",  // Kullanıcı telefonu burada alınacak
-                Durum = RandevuDurum.Bekliyor
-            };
-
-            _context.Randevular.Add(yeniRandevu);
-            await _context.SaveChangesAsync();
-
-            return RedirectToAction("RandevuListesi");  // Randevuların listeleneceği sayfaya yönlendir
-        }
-
-        // Kullanıcıya uygun randevular ve saat dilimlerini gösteren ekran
-        public async Task<IActionResult> RandevuListesi()
-        {
-            var randevular = await _context.Randevular.ToListAsync();
-            return View(randevular);
-        }
+        _userManager = userManager;
+        _context = context;
     }
+
+    public async Task<IActionResult> RandevuAl()
+    {
+        var user = await _userManager.GetUserAsync(User);
+        if (user == null)
+        {
+            // Kullanıcı giriş yapmamış, giriş sayfasına yönlendir
+            return RedirectToAction("Login", "Account");
+        }
+
+        // Kullanıcı giriş yapmış, randevu alma sayfasına yönlendir
+        var hizmetler = _context.Hizmetler.ToList();
+        var calisanlar = _context.Calisanlar.ToList();
+
+        var viewModel = new RandevuViewModel
+        {
+            Hizmetler = hizmetler,
+            Calisanlar = calisanlar
+        };
+
+        return View(viewModel);
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> RandevuAl(RandevuViewModel model)
+    {
+        var user = await _userManager.GetUserAsync(User);
+        if (user == null)
+        {
+            return RedirectToAction("Login", "Account");
+        }
+
+        var randevu = new Randevu
+        {
+            RandevuTarihi = model.RandevuTarihi,
+            RandevuSaati = model.RandevuSaati, // Saat bilgisini burada kaydediyoruz
+            HizmetId = model.HizmetId,
+            CalisanId = model.CalisanId,
+            MusteriAdi = user.FullName,
+            MusteriTelefon = user.PhoneNumber,
+            Durum = RandevuDurum.Bekliyor,
+            Onay = false
+        };
+
+
+        _context.Randevular.Add(randevu);
+        await _context.SaveChangesAsync();
+        return RedirectToAction("Randevularim");
+    }
+
+    // Kullanıcıya ait randevuları listeleyen action
+    public async Task<IActionResult> Randevularim()
+    {
+        var user = await _userManager.GetUserAsync(User);
+        if (user == null)
+        {
+            return RedirectToAction("Login", "Account");
+        }
+
+        // Kullanıcının tüm randevularını al
+        var randevular = await _context.Randevular
+            .Where(r => r.MusteriTelefon == user.PhoneNumber) // Kullanıcının telefon numarasına göre filtrele
+            .Include(r => r.Hizmet)  // Hizmet bilgilerini dahil et
+            .Include(r => r.Calisan) // Çalışan bilgilerini dahil et
+            .ToListAsync();
+
+        return View(randevular);
+    }
+
+    [HttpGet]
+    public async Task<IActionResult> Edit(int id)
+    {
+        var user = await _userManager.GetUserAsync(User);
+        if (user == null)
+        {
+            return RedirectToAction("Login", "Account");
+        }
+
+        var randevu = await _context.Randevular
+            .Include(r => r.Hizmet)
+            .Include(r => r.Calisan)
+            .FirstOrDefaultAsync(r => r.Id == id && r.MusteriAdi == user.FullName); // Kullanıcıya ait mi kontrolü
+
+        if (randevu == null)
+        {
+            return NotFound();
+        }
+
+        // Form için gerekli hizmet ve çalışan verilerini ViewData ile gönderiyoruz
+        ViewData["Hizmetler"] = _context.Hizmetler.ToList();
+        ViewData["Calisanlar"] = _context.Calisanlar.ToList();
+
+        return View(randevu);
+    }
+
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> Edit(int id, Randevu model)
+    {
+        var user = await _userManager.GetUserAsync(User);
+        if (user == null)
+        {
+            return RedirectToAction("Login", "Account");
+        }
+
+        var randevu = await _context.Randevular.FindAsync(id);
+
+        if (randevu == null || randevu.MusteriAdi != user.FullName) // Kullanıcıya ait değilse
+        {
+            return NotFound();
+        }
+
+        if (!ModelState.IsValid)
+        {
+            // Tekrar hizmet ve çalışan verilerini yükleyelim
+            ViewData["Hizmetler"] = _context.Hizmetler.ToList();
+            ViewData["Calisanlar"] = _context.Calisanlar.ToList();
+            return View(model);
+        }
+
+        // Randevu bilgilerini güncelle
+        randevu.HizmetId = model.HizmetId;
+        randevu.CalisanId = model.CalisanId;
+        randevu.RandevuTarihi = model.RandevuTarihi;
+
+        _context.Randevular.Update(randevu);
+        await _context.SaveChangesAsync();
+
+        return RedirectToAction("Randevularim");
+    }
+
+
+
+    [HttpPost]
+    public async Task<IActionResult> Cancel(int id)
+    {
+        var user = await _userManager.GetUserAsync(User);
+        if (user == null)
+        {
+            return RedirectToAction("Login", "Account");
+        }
+
+        var randevu = await _context.Randevular.FindAsync(id);
+
+        if (randevu == null || randevu.MusteriAdi != user.FullName)
+        {
+            return NotFound(); // Randevu yoksa veya bu kullanıcıya ait değilse
+        }
+
+        _context.Randevular.Remove(randevu); // Randevuyu sil
+        await _context.SaveChangesAsync();
+
+        return RedirectToAction("Randevularim");
+    }
+
+
 }

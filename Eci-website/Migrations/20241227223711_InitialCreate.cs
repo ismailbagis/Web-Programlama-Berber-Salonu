@@ -184,8 +184,7 @@ namespace Eci_website.Migrations
                     Soyad = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Telefon = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     UzmanlikAlani = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    CalismaBaslangic = table.Column<TimeSpan>(type: "time", nullable: false),
-                    CalismaBitis = table.Column<TimeSpan>(type: "time", nullable: false),
+                    Uygunluk = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     SalonId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
@@ -234,7 +233,8 @@ namespace Eci_website.Migrations
                     MusteriAdi = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     MusteriTelefon = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Onay = table.Column<bool>(type: "bit", nullable: false),
-                    Durum = table.Column<int>(type: "int", nullable: false)
+                    Durum = table.Column<int>(type: "int", nullable: false),
+                    RandevuSaati = table.Column<TimeSpan>(type: "time", nullable: false)
                 },
                 constraints: table =>
                 {

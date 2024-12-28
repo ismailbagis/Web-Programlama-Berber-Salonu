@@ -15,11 +15,24 @@ namespace Eci_website.Controllers
             _context = context;
         }
 
-        public IActionResult Randevular()
+        public IActionResult Randevular(DateTime? tarih)
         {
-            var randevular = _context.Randevular.Include(r => r.Hizmet).Include(r => r.Calisan).ToList();
+            // Varsayılan tarih bugün olsun
+            DateTime filtreTarihi = tarih ?? DateTime.Today;
+
+            // Randevuları belirtilen tarihe göre filtrele
+            var randevular = _context.Randevular
+                .Include(r => r.Hizmet)
+                .Include(r => r.Calisan)
+                .Where(r => r.RandevuTarihi.Date == filtreTarihi.Date) // Tarih filtresi
+                .ToList();
+
+            // Seçili tarihi View'e gönder
+            ViewBag.SeciliTarih = filtreTarihi;
+
             return View(randevular);
         }
+
 
         public async Task<IActionResult> Onayla(int id)
         {
@@ -50,6 +63,61 @@ namespace Eci_website.Controllers
 
             return RedirectToAction(nameof(Randevular));
         }
-    }
 
+        public IActionResult Kazanc()
+        {
+            // Tüm onaylı randevuları al
+            var onayliRandevular = _context.Randevular
+                .Include(r => r.Hizmet)
+                .Include(r => r.Calisan)
+                .Where(r => r.Onay) // Sadece onaylı randevular
+                .ToList();
+
+            // Çalışan bazlı kazançlar
+            var calisanKazanc = onayliRandevular
+                .GroupBy(r => r.Calisan)
+                .Select(grup => new
+                {
+                    Calisan = grup.Key,
+                    ToplamKazanc = grup.Sum(r => r.Hizmet.Ucret)
+                })
+                .ToList();
+
+            // Toplam kazancı hesapla
+            var toplamKazanc = onayliRandevular.Sum(r => r.Hizmet.Ucret);
+
+            // Verileri ViewBag ile gönder
+            ViewBag.CalisanKazanc = calisanKazanc;
+            ViewBag.ToplamKazanc = toplamKazanc;
+
+            return View();
+        }
+
+        public IActionResult GunlukKazanc()
+        {
+            // Tüm onaylı randevuları al
+            var onayliRandevular = _context.Randevular
+                .Include(r => r.Hizmet)
+                .Where(r => r.Onay) // Sadece onaylı randevular
+                .ToList();
+
+            // Randevuları tarih bazında gruplandır
+            var gunlukKazanc = onayliRandevular
+                .GroupBy(r => r.RandevuTarihi.Date) // Tarihe göre gruplama (sadece gün bilgisi)
+                .Select(grup => new
+                {
+                    Tarih = grup.Key,
+                    ToplamKazanc = grup.Sum(r => r.Hizmet.Ucret)
+                })
+                .OrderBy(g => g.Tarih) // Tarihlere göre sıralama
+                .ToList();
+
+            // Verileri ViewBag ile gönder
+            ViewBag.GunlukKazanc = gunlukKazanc;
+
+            return View();
+        }
+
+
+    }
 }

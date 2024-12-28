@@ -1,0 +1,36 @@
+﻿@{
+    ViewData["Title"] = "Yapay Zeka Görsel Oluşturma";
+}
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<h1>Yapay Zeka Görsel Oluşturma</h1>
+
+<div>
+    <form asp-action="Index" method="post">
+        <div class="form-group">
+            <label for="prompt">Görsel için bir açıklama girin:</label>
+            <input type="text" name="prompt" id="prompt" class="form-control" placeholder="Örneğin: " Bir uzay manzarası"" required />
+        </div>
+        <button type="submit" class="btn btn-primary mt-3">Görsel Oluştur</button>
+    </form>
+
+    @if (ViewBag.Error != null)
+    {
+        <div class="alert alert-danger mt-3">
+            <strong>Hata:</strong> @ViewBag.Error
+        </div>
+    }
+
+    @if (ViewBag.ImageUrl != null)
+    {
+        <div class="mt-5">
+            <h3>Oluşturulan Görsel:</h3>
+            <img src="@ViewBag.ImageUrl" alt="Oluşturulan Görsel" class="img-fluid" />
+        </div>
+    }
+</div>

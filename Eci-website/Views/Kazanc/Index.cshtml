@@ -1,0 +1,36 @@
+﻿@model IEnumerable<dynamic>
+
+@{
+    ViewData["Title"] = "Günlük Kazançlar";
+}
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<h2>Günlük Kazançlar</h2>
+
+<form method="get">
+    <label for="date">Tarih:</label>
+    <input type="date" id="date" name="date" value="@DateTime.Today.ToString("yyyy-MM-dd")" />
+    <button type="submit">Filtrele</button>
+</form>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Çalışan Adı</th>
+            <th>Günlük Kazanç</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.CalisanAdSoyad</td>
+                <td>@item.Kazanc.ToString("C2")</td>
+            </tr>
+        }
+    </tbody>
+</table>

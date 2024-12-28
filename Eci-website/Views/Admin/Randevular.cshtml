@@ -1,37 +1,56 @@
 ﻿@model IEnumerable<Eci_website.Models.Randevu>
 
+<h2>Randevu Listesi</h2>
 
- <br />
- <br /><br /><br /><br />
+<!-- Tarih Seçme Formu -->
+<form method="get" action="@Url.Action("Randevular", "Admin")">
+    <label for="tarih">Tarih Seç:</label>
+    <input type="date" id="tarih" name="tarih" value="@ViewBag.SeciliTarih.ToString("yyyy-MM-dd")" />
+    <button type="submit">Göster</button>
+</form>
+
 <br />
-<br />
-<br />
-<br />
+
 <table>
     <thead>
         <tr>
             <th>Hizmet</th>
             <th>Çalışan</th>
             <th>Tarih</th>
+            <th>Saat</th>
             <th>Durum</th>
             <th>Onay</th>
+            <th>Müşteri Adı</th>
+            <th>Müşteri Telefonu</th>
             <th>İşlemler</th>
         </tr>
     </thead>
     <tbody>
-        @foreach (var randevu in Model)
+        @if (!Model.Any())
         {
             <tr>
-                <td>@randevu.Hizmet.Ad</td>
-                <td>@randevu.Calisan.AdSoyad</td>
-                <td>@randevu.RandevuTarihi</td>
-                <td>@randevu.Durum</td>
-                <td>@randevu.Onay</td>
-                <td>
-                    <a href="@Url.Action("Onayla", "Admin", new { id = randevu.Id })">Onayla</a> |
-                    <a href="@Url.Action("RedEt", "Admin", new { id = randevu.Id })">Reddet</a>
-                </td>
+                <td colspan="9">Seçili tarihte herhangi bir randevu bulunamadı.</td>
             </tr>
+        }
+        else
+        {
+            @foreach (var randevu in Model)
+            {
+                <tr>
+                    <td>@randevu.Hizmet.Ad</td>
+                    <td>@randevu.Calisan.AdSoyad</td>
+                    <td>@randevu.RandevuTarihi.ToString("yyyy-MM-dd")</td> <!-- Tarih -->
+                    <td>@randevu.RandevuTarihi.ToString("HH:mm")</td> <!-- Saat -->
+                    <td>@randevu.Durum</td>
+                    <td>@(randevu.Onay ? "Onaylı" : "Bekliyor")</td>
+                    <td>@randevu.MusteriAdi</td>
+                    <td>@randevu.MusteriTelefon</td>
+                    <td>
+                        <a href="@Url.Action("Onayla", "Admin", new { id = randevu.Id })">Onayla</a> |
+                        <a href="@Url.Action("RedEt", "Admin", new { id = randevu.Id })">Reddet</a>
+                    </td>
+                </tr>
+            }
         }
     </tbody>
 </table>

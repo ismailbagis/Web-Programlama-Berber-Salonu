@@ -1,0 +1,39 @@
+﻿@{
+    ViewData["Title"] = "Kazanç Raporu";
+    var calisanKazanc = ViewBag.CalisanKazanc as IEnumerable<dynamic>;
+    var toplamKazanc = ViewBag.ToplamKazanc;
+}
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<h1>Kazanç Raporu</h1>
+
+<!-- Günlük Kazanç Raporuna Gitmek için Buton -->
+<a href="@Url.Action("GunlukKazanc", "Admin")" class="btn btn-primary">Günlük Kazanç Raporuna Git</a>
+
+<br />
+<br />
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Çalışan</th>
+            <th>Kazanç</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in calisanKazanc)
+        {
+            <tr>
+                <td>@item.Calisan.AdSoyad</td>
+                <td>@item.ToplamKazanc.ToString("C")</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<h3>Toplam Kazanç: @toplamKazanc.ToString("C")</h3>

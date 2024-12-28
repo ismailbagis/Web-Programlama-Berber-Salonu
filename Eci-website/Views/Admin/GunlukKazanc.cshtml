@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Günlük Kazanç Raporu";
+    var gunlukKazanc = ViewBag.GunlukKazanc as IEnumerable<dynamic>;
+}
+
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<h1>Günlük Kazanç Raporu</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Tarih</th>
+            <th>Kazanç</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in gunlukKazanc)
+        {
+            <tr>
+                <td>@item.Tarih.ToString("dd.MM.yyyy")</td>
+                <td>@item.ToplamKazanc.ToString("C")</td>
+            </tr>
+        }
+    </tbody>
+</table>
