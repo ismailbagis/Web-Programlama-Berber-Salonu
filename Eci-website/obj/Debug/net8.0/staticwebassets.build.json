@@ -1,6 +1,10 @@
 {
   "Version": 1,
+<<<<<<< HEAD
+  "Hash": "fW2RV8LsttPl8PVEGB9dLviaSSIaVsgMZrWvn9xxR5k=",
+=======
   "Hash": "BY6UcBdkcUiOn/UDMvGAfwYfBWGOXbFqjOAn4CCqay0=",
+>>>>>>> 90587bb91df46fce4869469130d59dbe9b3b3962
   "Source": "Eci-website",
   "BasePath": "_content/Eci-website",
   "Mode": "Default",
@@ -2466,6 +2470,8 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+<<<<<<< HEAD
+=======
     },
     {
       "Identity": "C:\\Users\\Tunahan Özdemir\\Documents\\GitHub\\Web-Programlama-Berber-Salonu\\Eci-website\\wwwroot\\Uploads\\sado.png",
@@ -2618,6 +2624,7 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Uploads\\sado_dd3ab941-b93c-43ef-97a2-55802e07f227.png"
+>>>>>>> 90587bb91df46fce4869469130d59dbe9b3b3962
     }
   ]
 }

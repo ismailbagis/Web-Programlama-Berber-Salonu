@@ -181,6 +181,9 @@
       "PackagePath": "staticwebassets\\Eci-website.bundle.scp.css"
     },
     {
+<<<<<<< HEAD
+      "Id": "C:\\Users\\rog\\Desktop\\site yedek 3\\Eci-website\\wwwroot\\css\\site.css",
+=======
       "Id": "C:\\Users\\Tunahan Özdemir\\Documents\\GitHub\\Web-Programlama-Berber-Salonu\\Eci-website\\wwwroot\\Uploads\\sado.png",
       "PackagePath": "staticwebassets\\Uploads\\sado.png"
     },
@@ -214,6 +217,7 @@
     },
     {
       "Id": "C:\\Users\\Tunahan Özdemir\\Documents\\GitHub\\Web-Programlama-Berber-Salonu\\Eci-website\\wwwroot\\css\\site.css",
+>>>>>>> 90587bb91df46fce4869469130d59dbe9b3b3962
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {

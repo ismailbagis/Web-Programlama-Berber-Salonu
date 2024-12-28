@@ -25,10 +25,9 @@
                 <div class="card-body">
                     <h5 class="card-title">@Html.DisplayFor(modelItem => item.Ad)</h5>
                     <p class="card-text">
-                        <strong>Adres:</strong> @Html.DisplayFor(modelItem => item.Aciklama) <br />
-                        <strong>Telefon:</strong> @Html.DisplayFor(modelItem => item.Ucret) <br />
-                        <strong>Çalışma Saatleri:</strong> @Html.DisplayFor(modelItem => item.Sure)
-                        <strong>Çalışma Saatleri:</strong> @Html.DisplayFor(modelItem => item.SalonId)
+                        <strong>Hizmet Açıklaması :</strong> @Html.DisplayFor(modelItem => item.Aciklama) <br />
+                        <strong>Ücret :</strong> @Html.DisplayFor(modelItem => item.Ucret) <br />
+                        <strong>Hizmet Süresi:</strong> @Html.DisplayFor(modelItem => item.Sure)<br />
 
                     </p>
                     @if (isAdmin)
