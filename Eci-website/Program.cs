@@ -54,7 +54,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddHttpClient("HairstyleClient", client =>
 {  //9
     client.BaseAddress = new Uri("https://hairstyle-changer.p.rapidapi.com/");
-    client.DefaultRequestHeaders.Add("x-rapidapi-key", "464e0bb017msh6fa5a9938be79eep1ce7f6jsnd3ee2fe6faa6");
+    client.DefaultRequestHeaders.Add("x-rapidapi-key", "05d98557e9msh968fdd8b9f435a1p1ea2aajsne49832c16bda");
     client.DefaultRequestHeaders.Add("x-rapidapi-host", "hairstyle-changer.p.rapidapi.com");
 });
 

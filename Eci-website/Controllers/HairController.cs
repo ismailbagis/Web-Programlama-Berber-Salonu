@@ -88,7 +88,7 @@ namespace Eci_website.Controllers
         }
 
         // YENİ METOD EKLENDİ - BAŞLANGIÇ
-        private async Task<string> SendApiRequestAndGetBase64(HttpClient client, string filePath, string fileName, string hairType)
+        private async Task<string?> SendApiRequestAndGetBase64(HttpClient client, string filePath, string fileName, string hairType)
         {
             try
             {

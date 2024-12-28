@@ -3,37 +3,59 @@
 }
 
 <br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<h2>Ai İle Sana Uygun Saç Tipini Bul</h2>
+<h2>AI ile Sana Uygun Saç Tipini Bul</h2>
 
-<form method="post" enctype="multipart/form-data">
+<form method="post" enctype="multipart/form-data" asp-action="UploadHairstyle">
     <div>
-        <label>Fotoğraf Yükle:</label>
-        <input type="file" name="uploadedImage" />
+        <label for="imageFile">Fotoğraf Yükle:</label>
+        <input type="file" name="imageFile" id="imageFile" />
     </div>
+
+    <div>
+        <label for="hairType1">Saç Tipi 1:</label>
+        <select name="hairType1" id="hairType1">
+            <option value="">Seçiniz</option>
+            @foreach (var item in ViewBag.HairTypeNames as Dictionary<string, string>)
+            {
+                <option value="@item.Key">@item.Value</option>
+            }
+        </select>
+    </div>
+
+    <div>
+        <label for="hairType2">Saç Tipi 2:</label>
+        <select name="hairType2" id="hairType2">
+            <option value="">Seçiniz</option>
+            @foreach (var item in ViewBag.HairTypeNames as Dictionary<string, string>)
+            {
+                <option value="@item.Key">@item.Value</option>
+            }
+        </select>
+    </div>
+
+    <div>
+        <label for="hairType3">Saç Tipi 3:</label>
+        <select name="hairType3" id="hairType3">
+            <option value="">Seçiniz</option>
+            @foreach (var item in ViewBag.HairTypeNames as Dictionary<string, string>)
+            {
+                <option value="@item.Key">@item.Value</option>
+            }
+        </select>
+    </div>
+
     <button type="submit">Gönder</button>
 </form>
 
 <hr />
 
-<!-- Hata mesajı varsa göster -->
+<!-- Hata mesajlarını göster -->
 @if (ViewBag.Error != null)
 {
-    <div style="color:red;">
-        ViewBag.Error = "Beklenmeyen bir hata oluştu. Lütfen tekrar deneyin.";
-
+    <div style="color: red;">
+        @foreach (var error in ViewBag.Error as List<string>)
+        {
+            <p>@error</p>
+        }
     </div>
 }
-
-<!-- Eğer tek sonuç geldiyse göster -->
-@if (ViewBag.ResultImageBase64 != null)
-{
-    <h3>Seçilen Saç Tipi: @ViewBag.SelectedHairTypeName (@ViewBag.SelectedHairTypeCode)</h3>
-    <img src="data:image/jpeg;base64,@ViewBag.ResultImageBase64" alt="Result" style="max-width:300px;" />
-} 

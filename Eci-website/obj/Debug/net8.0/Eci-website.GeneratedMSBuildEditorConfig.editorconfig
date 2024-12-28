@@ -54,12 +54,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FsaXNhblxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rog/Desktop/site yedek 3/Eci-website/Views/HairChanger/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFpckNoYW5nZXJcSW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/rog/Desktop/site yedek 3/Eci-website/Views/Hair/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFpclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rog/Desktop/site yedek 3/Eci-website/Views/Hair/Result.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFpclxSZXN1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/rog/Desktop/site yedek 3/Eci-website/Views/Hizmet/Create.cshtml]
@@ -144,10 +144,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/rog/Desktop/site yedek 3/Eci-website/Views/Users/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcSW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/rog/Desktop/site yedek 3/Eci-website/Views/YapayZeka/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWWFwYXlaZWthXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/rog/Desktop/site yedek 3/Eci-website/Views/_ViewImports.cshtml]

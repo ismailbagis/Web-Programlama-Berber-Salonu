@@ -1,0 +1,34 @@
+﻿@{
+    ViewData["Title"] = "Sonuçlar";
+}
+
+<h2>Sonuçlar</h2>
+
+@if (ViewBag.ResultImagesBase64 != null && ViewBag.ResultImagesBase64.Count > 0)
+{
+    <p>Seçtiğiniz saç tiplerine göre AI sonuçları aşağıda:</p>
+
+    <div>
+        @for (int i = 0; i < ViewBag.ResultImagesBase64.Count; i++)
+        {
+            <div>
+                <h3>Saç Tipi: @ViewBag.SelectedHairTypes[i]</h3>
+                <img src="data:image/jpeg;base64,@ViewBag.ResultImagesBase64[i]" alt="Result @i" style="max-width:300px;" />
+            </div>
+        }
+    </div>
+}
+else
+{
+    <p>Maalesef sonuç oluşturulamadı. Lütfen tekrar deneyin.</p>
+}
+
+@if (ViewBag.Error != null)
+{
+    <div style="color: red;">
+        @foreach (var error in ViewBag.Error as List<string>)
+        {
+            <p>@error</p>
+        }
+    </div>
+}
