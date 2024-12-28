@@ -465,4 +465,3 @@ C:\Users\rog\Desktop\site yedek 3\Eci-website\bin\Debug\net8.0\Microsoft.OpenApi
 C:\Users\rog\Desktop\site yedek 3\Eci-website\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\rog\Desktop\site yedek 3\Eci-website\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\rog\Desktop\site yedek 3\Eci-website\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\Users\rog\Desktop\site yedek 3\Eci-website\bin\Debug\net8.0\OpenAI.dll

@@ -16,11 +16,6 @@ builder.Services.Configure<FormOptions>(options =>
     options.MultipartBodyLengthLimit = 104857600; // 100 MB
 });
 
-// Swagger ayarları
-builder.Services.AddSwaggerGen(c =>
-{
-    c.SwaggerDoc("v1", new OpenApiInfo { Title = "Eci Website API", Version = "v1" });
-});
 
 // Veritabanı Bağlantısı
 builder.Services.AddDbContext<IdentityContext>(options =>
@@ -53,6 +48,19 @@ builder.Services.ConfigureApplicationCookie(options =>
     options.SlidingExpiration = true;
     options.ExpireTimeSpan = TimeSpan.FromDays(30);
 });
+
+builder.Services.AddSwaggerGen();
+
+builder.Services.AddHttpClient("HairstyleClient", client =>
+{  //9
+    client.BaseAddress = new Uri("https://hairstyle-changer.p.rapidapi.com/");
+    client.DefaultRequestHeaders.Add("x-rapidapi-key", "464e0bb017msh6fa5a9938be79eep1ce7f6jsnd3ee2fe6faa6");
+    client.DefaultRequestHeaders.Add("x-rapidapi-host", "hairstyle-changer.p.rapidapi.com");
+});
+
+
+
+
 
 var app = builder.Build();
 

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "N5b/f0f03Z406V+N5L/T8PnYUkMkn+333wHnebbegTo=",
+  "Hash": "/fgRLwCj8slmJ41yjLG2xhr0Uw2gtYKWve06ApxlZcE=",
   "Source": "Eci-website",
   "BasePath": "_content/Eci-website",
   "Mode": "Default",
@@ -1041,6 +1041,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\485c1c02-d2f5-43e0-8f4e-1f5c97165448.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\rog\\Desktop\\site yedek 3\\Eci-website\\wwwroot\\img\\54aa5683-046b-413e-89eb-86c4de098620.jpg",
+      "SourceId": "Eci-website",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\rog\\Desktop\\site yedek 3\\Eci-website\\wwwroot\\",
+      "BasePath": "_content/Eci-website",
+      "RelativePath": "img/54aa5683-046b-413e-89eb-86c4de098620.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\54aa5683-046b-413e-89eb-86c4de098620.jpg"
     },
     {
       "Identity": "C:\\Users\\rog\\Desktop\\site yedek 3\\Eci-website\\wwwroot\\img\\6318ba23-440b-4011-a105-9a7b00418f51.jpg",

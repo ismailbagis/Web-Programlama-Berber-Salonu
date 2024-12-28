@@ -1,0 +1,39 @@
+﻿@{
+    ViewData["Title"] = "Hairstyle Changer";
+}
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<h2>Ai İle Sana Uygun Saç Tipini Bul</h2>
+
+<form method="post" enctype="multipart/form-data">
+    <div>
+        <label>Fotoğraf Yükle:</label>
+        <input type="file" name="uploadedImage" />
+    </div>
+    <button type="submit">Gönder</button>
+</form>
+
+<hr />
+
+<!-- Hata mesajı varsa göster -->
+@if (ViewBag.Error != null)
+{
+    <div style="color:red;">
+        ViewBag.Error = "Beklenmeyen bir hata oluştu. Lütfen tekrar deneyin.";
+
+    </div>
+}
+
+<!-- Eğer tek sonuç geldiyse göster -->
+@if (ViewBag.ResultImageBase64 != null)
+{
+    <h3>Seçilen Saç Tipi: @ViewBag.SelectedHairTypeName (@ViewBag.SelectedHairTypeCode)</h3>
+    <img src="data:image/jpeg;base64,@ViewBag.ResultImageBase64" alt="Result" style="max-width:300px;" />
+} 
